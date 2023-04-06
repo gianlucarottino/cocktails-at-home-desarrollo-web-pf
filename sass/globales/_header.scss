@@ -1,0 +1,54 @@
+.header-desktop {
+    width: 100%;
+    height: 9rem;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    
+    // logo //
+
+    .logo-container {
+        width: max-content;
+
+        .logo-header {
+            width: 10rem;
+            height: max-content;
+        }
+    }
+
+    // button right //
+
+    .right-header {
+        width: fit-content;
+        height: 100%;
+        display: flex;
+
+        ul {
+            height: 100%;
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+
+            li {
+                list-style-type: none;
+                height: fit-content;
+
+                .boton-header {
+                    text-decoration: none;
+                    color: $colorprimario;
+                    font-weight: 600;
+                    font-size: 18px;
+                    padding: 1em;
+                }
+
+                // button cta //
+                .subscribe {
+                color: $colorsecundario;
+                background-color: $colorprimario;
+                border-radius: 1em;
+                }
+            }
+        }
+    }
+}
