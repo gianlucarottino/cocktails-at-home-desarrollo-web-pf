@@ -69,16 +69,18 @@
                 </h1>
                 <p class="description-main">La web que te facilitará recetas de miles de cocteles e información de Coctelería, a solo un par de clicks para que seas un experto.</p>
                 <div class="boton-cta-main">
-                    <a href="" class="text-boton">¡Comenza a mezclar!</a>
+                    <a href="#descubrir" class="text-boton">¡Comenzá a mezclar!</a>
                 </div>
             </div>
         </div>
     </main>
     <section class="categories">
         <!-- titulo -->
-        <h2>Descubrir</h2>
+        <h2 class="title-categories">Descubrir
+            <a name="descubrir"></a>
+        </h2>
         <!-- texto -->
-        <p class="categories-text">¿Qué cóctel vas a beber hoy?</p>
+        <h3>¿Qué cóctel vas a beber hoy?</h3>
         <p class="categories-text">Cada semana añadimos nuevas recetas a la colección. Te presentamos algunos de los cócteles más destacado. Échale un vistazo a nuestra lista de cócteles.</p>
         <!-- card container -->
         <div class="cards-container">
@@ -204,8 +206,103 @@
             </div>
         </div>
     </section>
-    <footer>
-        
+    <footer class="grid-footer">
+        <!-- top -->
+        <!-- text -->
+        <div class="top-footer-text">
+            <h4>¿Queres convertirte en un experto coctelero?</h4>
+            <p class="parrafos">Recibe en tu correo las mejores recetas, trucos, consejos y mucho más, al suscribirte a nuestro News.</p>
+        </div>
+        <!-- form -->
+        <div class="top-footer-form">
+            <form class="form" action="suscribeNewslatter">
+                <input placeholder="Correo electronico" type="email" id="mail" name="user_mail" class="input">
+                <button class="button" type="submit">Suscribirme</button>
+            </form>
+        </div>
+        <!-- mid -->
+        <div class="mid-footer-marca">
+            <!-- logo -->
+            <div class="logo-container">
+                <a href="./index.html">
+                    <img src="./images/logo-horizontal.png" alt="logo horizontal">
+                </a>
+            </div>
+            <!-- redes -->
+            <div class="mid-footer-redes">
+                <p class="redes-comment">Seguinos en nuestras redes</p>
+                <div class="icons-redes">
+                    <div class="icon-container">
+                        <a href="https://www.facebook.com/" target="_blank" rel="noopener noreferrer">
+                            <img src="./images/icons-redes/icons8-facebook-nuevo-50 1.png" alt="red social facebook">
+                        </a>
+                    </div>
+                    <div class="icon-container">
+                        <a href="https://www.instagram.com/?hl=es" target="_blank" rel="noopener noreferrer">
+                            <img src="./images/icons-redes/icons8-instagram-50 1.png" alt="red social instagram">
+                        </a>
+                    </div>
+                    <div class="icon-container">
+                        <a href="https://twitter.com/home" target="_blank" rel="noopener noreferrer">
+                            <img src="./images/icons-redes/icons8-twitter-50 2.png" alt="red social twitter">
+                        </a>
+                    </div>
+                    <div class="icon-container">
+                        <a href="https://www.tiktok.com/es/" target="_blank" rel="noopener noreferrer">
+                            <img src="./images/icons-redes/tik-tok 1.png" alt="red social tik tok">
+                        </a>
+                    </div>
+                    <div class="icon-container">
+                        <a href="https://www.linkedin.com/feed/" target="_blank" rel="noopener noreferrer">
+                            <img src="./images/icons-redes/linkedin 1.png" alt="red social linkedIn">
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- nav footer -->
+        <div class="mid-footer-nav">
+            <div class="nav-items">
+                <p class="title-nav">Descubrir</p>
+                <p>Colecciones</p>
+                <p>Recetas semanales</p>
+                <p>Juegos para tomar</p>
+            </div>
+            <div class="nav-items">
+                <p class="title-nav">Bebidas</p>
+                <p>Cocteles</p>
+                <p>Ingredientes</p>
+            </div>
+            <div class="nav-items">
+                <p class="title-nav">Institucional</p>
+                <p>Sobre nosotros</p>
+                <p>Contactanos</p>
+            </div>
+            <div class="nav-items">
+                <p class="title-nav">Cuenta</p>
+                <p>Iniciar sesion</p>
+                <p>Crear cuenta</p>
+            </div>
+        </div>
+        <!-- bottom -->
+        <div class="bottom-footer">
+            <div class="footer-copyright">
+                <p>Copyright</p>
+                <div class="icon-container">
+                    <img src="./images/copyright-icon.png" alt="icono de copyright" class="icon-copyright">
+                </div>
+                <p>2023 Cocktails at Home. Todos los derechos reservados</p>
+            </div>
+            <div class="footer-copyright">
+                <p>Politica de privacidad</p>
+                <p>|</p>
+                <p>Aviso Legal</p>
+                <p>|</p>
+                <p>Mapa de sitio</p>
+            </div>
+        </div>
     </footer>
+    <!-- link cdn bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
 </body>
 </html>

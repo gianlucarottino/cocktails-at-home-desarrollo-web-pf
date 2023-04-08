@@ -15,6 +15,9 @@ body {
   margin-top: 0.75rem;
   margin-bottom: 0.75rem;
 }
+body p {
+  margin: 0;
+}
 
 .header-desktop {
   width: 100%;
@@ -75,7 +78,7 @@ body {
 
 .main-content {
   height: 49rem;
-  background-image: url("../../images/image-main-content.jpg");
+  background-image: url("../images/image-main-content.jpg");
   background-size: 100% auto;
   background-repeat: no-repeat;
 }
@@ -127,7 +130,7 @@ body {
   flex-direction: column;
   gap: 0.5em;
 }
-.categories h2 {
+.categories .title-categories {
   font-size: 2.2em;
   font-weight: 700;
 }
@@ -180,4 +183,112 @@ body {
 .card-cocktail .description-container {
   width: 100%;
   height: 6em;
+}
+
+.grid-footer {
+  width: 100%;
+  height: 20rem;
+  display: grid;
+  grid-template-columns: 25% 30% 1fr;
+  grid-template-rows: 40% 55% auto;
+  grid-template-areas: "footer-text footer-text footer-form" "footer-marca footer-nav ." "footer-bottom footer-bottom footer-bottom";
+  justify-items: center;
+  align-items: center;
+}
+.grid-footer .top-footer-text {
+  grid-area: footer-text;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5em;
+}
+.grid-footer .top-footer-text h4 {
+  font-size: x-large;
+  font-weight: 700;
+}
+.grid-footer .top-footer-text p {
+  font-size: medium;
+}
+.grid-footer .top-footer-form {
+  grid-area: footer-form;
+  display: flex;
+  width: 100%;
+}
+.grid-footer .top-footer-form .form {
+  width: 100%;
+  height: -moz-min-content;
+  height: min-content;
+  display: flex;
+  justify-content: center;
+  gap: 0.5em;
+}
+.grid-footer .top-footer-form .form .input {
+  width: 40%;
+  height: 2em;
+  font-weight: 400;
+  -webkit-padding-start: 0.5rem;
+          padding-inline-start: 0.5rem;
+  border-radius: 10px;
+  border: 1px solid #3A4004;
+}
+.grid-footer .top-footer-form .form .button {
+  width: 15%;
+  height: 2.1em;
+  font-size: 15px;
+  font-weight: 600;
+  border-radius: 10px;
+  color: #FAF6E7;
+  background-color: #3A4004;
+}
+.grid-footer .mid-footer-marca {
+  grid-area: footer-marca;
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+}
+.grid-footer .mid-footer-marca .logo-container {
+  width: -moz-max-content;
+  width: max-content;
+}
+.grid-footer .mid-footer-marca .logo-container img {
+  width: 8rem;
+}
+.grid-footer .mid-footer-marca .mid-footer-redes {
+  display: flex;
+  flex-direction: column;
+}
+.grid-footer .mid-footer-marca .mid-footer-redes .redes-comment {
+  font-size: large;
+  font-weight: 600;
+}
+.grid-footer .mid-footer-marca .mid-footer-redes .icons-redes {
+  display: flex;
+  flex-direction: row;
+  gap: 0.75em;
+}
+.grid-footer .mid-footer-marca .mid-footer-redes .icons-redes .icon-container img {
+  width: 2.2rem;
+}
+.grid-footer .mid-footer-nav {
+  grid-area: footer-nav;
+  display: flex;
+  flex-direction: row;
+  gap: 0.5rem;
+}
+.grid-footer .mid-footer-nav .nav-items {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+.grid-footer .mid-footer-nav .nav-items .title-nav {
+  font-weight: 700;
+}
+.grid-footer .bottom-footer {
+  width: 100%;
+  grid-area: footer-bottom;
+  display: flex;
+  justify-content: space-evenly;
+}
+.grid-footer .bottom-footer .footer-copyright {
+  display: flex;
+  gap: 0.5rem;
 }/*# sourceMappingURL=style.css.map */
