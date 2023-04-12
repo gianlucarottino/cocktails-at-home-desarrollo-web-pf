@@ -92,8 +92,8 @@
         width: 100%;
         display: flex;
         flex-wrap: wrap;
-        justify-content: space-between;
-        gap: 2em;
+        justify-content: space-evenly;
+        gap: 1.5em;
         margin-top: 0.5em;
     }
 }
@@ -175,6 +175,39 @@
 
             .cards-container {
                 gap: 0.75em;
+            }
+        }
+    }
+
+    // breakpoint 2: 768 //
+
+    @media screen and (min-width:768px) and (max-width:1024px) {
+        .main-content {
+
+            .linear-gradient {
+                height: 32rem;
+
+                .main-text {
+                    width: 100%;
+                    margin-left: 3rem;
+
+                    .heading-tag-main {
+                        width: 61%;
+                    }
+
+                    .description-main {
+                        width: 63%;
+                    }
+                }
+            }
+        }
+
+        .categories {
+            margin: 2em 4em;
+
+            .cards-container {
+                justify-content: center;
+                gap: 1em 2em;
             }
         }
     }

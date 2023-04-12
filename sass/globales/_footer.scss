@@ -104,7 +104,7 @@
         grid-area: footer-nav;
         display: flex;
         flex-direction: row;
-        gap: 0.5rem;
+        gap: 2rem;
 
         .nav-items {
             display: flex;
@@ -134,7 +134,7 @@
 
     // breakpoint 1: 320 //
 
-    @media screen and (min-width: 320px) and (max-width: 1366px) {
+    @media screen and (min-width: 320px) and (max-width: 1023px) {
         
         .grid-footer {
             grid-template-columns: 100%;
@@ -220,6 +220,28 @@
 
                     p {
                         font-size: small;
+                    }
+                }
+            }
+        }
+    }
+
+    // breakpoint 3: 1920 //
+    
+    @media screen and (min-width:1024px) and (max-width:1700px) {
+        .grid-footer {
+            grid-template-columns: 25% 39% 1fr;
+
+            .top-footer-form {
+
+                .form {
+
+                    .input {
+                        width: 55%;
+                    }
+
+                    .button {
+                        width: 25%;
                     }
                 }
             }

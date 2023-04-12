@@ -8,8 +8,8 @@
     gap: 1em;
 
     .img-container {
-        width: 23em;
-        height: 13em;
+        width: 23.44em;
+        height: auto;
         overflow: hidden;
         object-fit: cover;
         border-radius: 10px;
@@ -122,3 +122,29 @@
             }
         }
     }
+
+        // breakpoint 2: 768 //
+
+        @media screen and (min-width:768px) and (max-width:1023px) {
+            .card-cocktail {
+                width: 47%;
+                padding: 0.75em;
+
+                .img-container {
+                    height: 11em;
+                    width: 100%;
+
+                }
+
+                .text-container {
+
+                    .description-container {
+                        height: max-content;
+
+                        .card-text--mobile {
+                            display: none;
+                        }
+                    }
+                }
+            }
+        }
