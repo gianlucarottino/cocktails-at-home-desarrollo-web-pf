@@ -66,13 +66,13 @@
 
 // categories //
 
-.categories {
+.section {
     margin: 3em 5em;
     display: flex;
     flex-direction: column;
     gap: 0.5em;
 
-    .title-categories {
+    .section-title {
         font-size: 2.2em;
         font-weight: 700;
         color: $colorprimario;
@@ -83,7 +83,7 @@
         font-weight: 600;
     }
 
-    .categories-text {
+    .section-text {
         font-size: 1.1em;
         font-weight: 400;
     }
@@ -156,12 +156,12 @@
             }
         }
 
-        .categories {
+        .section {
             margin: 0 1.1em;
             text-align: center;
             gap: 1em;
 
-            .title-categories {
+            .section-title {
                 font-size: 1.6rem;
             }
 
@@ -169,7 +169,7 @@
                 font-size: 1.25rem;
             }
 
-            .categories-text {
+            .section-text {
                 font-size: 0.90em;
             }
 
@@ -202,7 +202,7 @@
             }
         }
 
-        .categories {
+        .section {
             margin: 2em 4em;
 
             .cards-container {

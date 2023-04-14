@@ -1,0 +1,129 @@
+.container-flex {
+    width: 100%;
+    height: max-content;
+    display: flex;
+    justify-content: center;
+    margin: 2em 0;
+    align-items: center;
+
+    .column {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        gap: 2rem;
+        flex-wrap: wrap;
+        align-items: center;
+
+        .text-container {
+            width: 56%;
+            
+            .section-text {
+                font-size: 1.25em;
+                font-weight: 400;
+                text-align: center;
+            }
+        }
+        
+        .redes-container {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            gap: 0.75rem;
+
+            .contact-row {
+                display: flex;
+                gap: 1em;
+                
+                .title {
+                    font-weight: 700;
+                    font-size: medium;
+                    color: $colorprimario;
+                }
+            }
+        }
+
+        .form {
+            width: 50%;
+            height: min-content;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            gap: 0.5em;
+
+            .input {
+                height: 2em;
+                font-weight: 400;
+                padding-inline-start: 0.5rem;
+                border-radius: 10px;
+                border: 1px solid $colorprimario;
+            }
+
+            .message {
+                height: max-content;
+            }
+
+            .button {
+                height: 2.1em;
+                font-size: 15px;
+                font-weight: 600;
+                border-radius: 10px;
+                color: $colorsecundario;
+                background-color: $colorprimario;
+            }
+        }
+    }
+}
+
+// MEDIA QUERIES //
+
+    // breakpoint 1: 320 //
+
+    @media screen and (min-width:320px) and (max-width:768px) {
+        .section {
+            
+            .container-flex {
+                flex-wrap: wrap;
+                margin: 0;
+                gap: 2em;
+
+                .column {
+                    gap: 1.25em;
+
+                    .text-container {
+                        width: 100%;
+
+                        .section-text {
+                            font-size: 1em;
+                        }
+                    }
+
+                    .redes-container {
+                        gap: 1.5em;
+
+                        .contact-row {
+                            text-align: start;
+
+                            .img-container {
+                                width: 2em;
+
+                                img {
+                                    width: 100%;
+                                }
+                            }
+
+                            .contact-redes {
+
+                                p {
+                                    font-size: small;
+                                }
+                            }
+                        }
+                    }
+
+                    .form {
+                        width: 75%;
+                    }
+                }
+            }
+        }
+    }
