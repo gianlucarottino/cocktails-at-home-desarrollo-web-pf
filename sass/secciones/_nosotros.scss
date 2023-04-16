@@ -1,0 +1,175 @@
+$color3: #677827;
+$color4: #F2E4B9;
+
+.row-container {
+    display: flex;
+    flex-direction: row;
+    gap: 2em;
+    background: linear-gradient(0deg, #FAF6E7, #F2E4B9);
+    padding: 2em 0;
+    justify-content: center;
+
+    .section {
+        margin: 0;
+        width: 30%;
+        justify-content: center;
+    }
+
+    .img-container {
+        width: 50%;
+        object-fit: cover;
+        overflow: hidden;
+        border-radius: 10px;
+
+        img {
+            width: 100%;
+        }
+    }
+}
+
+.nosotros {
+    text-align: center;
+    gap: 2em;
+
+    .mision-vision {
+        display: flex;
+        justify-content: center;
+        gap: 2em;
+
+        .img-container {
+            width: 27em;
+            height: 35em;
+            object-fit: cover;
+            overflow: hidden;
+            border-radius: 1em;
+            display: flex;
+            align-items: center;
+
+            img {
+                width: 100%;
+            }
+        }
+
+        .mision {
+            width: 30%;
+            padding: 2em;
+            border-radius: 1em;
+            display: flex;
+            flex-direction: column;
+            gap: 0.5em;
+            justify-content: center;
+        }
+    }
+
+    .context-container {
+        display: flex;
+        justify-content: space-evenly;
+
+        .flex-item {
+            width: 25%;
+            display: flex;
+            flex-direction: column;
+            padding: 2em;
+            border-radius: 1em;
+            gap: 0.5em;
+            
+            .text-modif {
+                color: $colorsecundario;
+            }
+
+            h4 {
+                font-size: 25px;
+                font-weight: 600;
+            }
+        }
+
+        .problema {
+            background-color: $coloracento;
+
+            h4 {
+                color: $colorprimario;
+            }
+        }
+
+        .objetivo {
+            background-color: $color3;
+
+            h4 {
+                color: $color4;
+            }
+        }
+
+        .solucion {
+            background-color: $colorprimario;
+
+            h4 {
+                color: $color4;
+            }
+        }
+    }
+}
+
+// NEDIA QUERIES //
+
+    // breakpoint 1: 320 //
+
+    @media screen and (min-width:320px) and (max-width:1024px) {
+        .row-container {
+            flex-direction: column;
+            align-items: center;
+            padding: 2em 1.5em;
+
+            .section {
+                width: 100%;
+            }
+
+            .img-container {
+                width: 100%;
+            }
+        }
+
+        .nosotros {
+            margin-top: 2em;
+            
+            .mision-vision {
+                flex-direction: column;
+                align-items: center;
+    
+                .mision {
+                    width: 100%;
+                    padding: 0;
+                }
+    
+                .img-container {
+                    width: 100%;
+                    height: 25em;
+                }
+            }
+            
+            .context-container {
+                flex-direction: column;
+                align-items: center;
+                gap: 1em;
+    
+                .flex-item {
+                    width: 100%;
+                    padding: 1.25em;
+                }
+            }
+        }
+    }
+
+    // breakpoint 2: 768 //
+
+    @media screen and (min-width:768px) and (max-width:1024px) {
+        .nosotros {
+
+            .mision-vision {
+
+                .img-container {
+                    width: 27em;
+                    height: 35em;
+                }
+            }
+        }
+    }
