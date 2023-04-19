@@ -72,7 +72,7 @@ body p {
   font-size: 18px;
   padding: 1em;
 }
-.header-desktop .nav-native .right-header ul li .subscribe {
+.header-desktop .nav-native .right-header ul li .suscribe {
   color: #FAF6E7;
   background-color: #3A4004;
   border-radius: 1em;
@@ -138,6 +138,102 @@ body p {
 }
 .card-cocktail .text-container .description-container .card-text--mobile {
   visibility: hidden;
+}
+
+.card-bebidas {
+  width: 20em;
+  height: 16em;
+  -o-object-fit: cover;
+     object-fit: cover;
+  overflow: hidden;
+  border-radius: 0.75em;
+  background-image: url("../images/pisco-sour.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+.card-bebidas .linear-gradient {
+  height: 100%;
+  background: linear-gradient(45deg, rgba(0, 0, 0, 0.75) 20%, transparent);
+  display: flex;
+  padding: 1.25em;
+  justify-content: center;
+  align-items: center;
+}
+.card-bebidas .linear-gradient .card-text {
+  width: 100%;
+  height: 100%;
+  color: #FAF6E7;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  gap: 0.5em;
+}
+.card-bebidas .linear-gradient .card-text h4 {
+  font-size: x-large;
+  font-weight: 700;
+  color: #FAF6E7;
+}
+.card-bebidas .linear-gradient .card-text p {
+  font-size: smaller;
+  font-weight: 400;
+}
+.card-bebidas .linear-gradient .card-text .buttons-container {
+  display: flex;
+  align-items: center;
+  gap: 0.5em;
+}
+.card-bebidas .linear-gradient .card-text .buttons-container .button {
+  width: 50%;
+  height: 3em;
+  font-weight: 600;
+  color: #3A4004;
+  font-size: medium;
+  background-color: #FAF6E7;
+  border-radius: 0.5em;
+  border: none;
+}
+.card-bebidas .linear-gradient .card-text .buttons-container .primary {
+  color: #FAF6E7;
+  background-color: #3A4004;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+}
+.card-bebidas .linear-gradient .card-text .buttons-container .primary i {
+  margin-top: 3px;
+}
+.card-bebidas .linear-gradient .card-text .buttons-container .secondary {
+  width: 3em;
+}
+
+.caipirinha {
+  background-image: url("../images/caipirinha.jpg");
+}
+
+.daiquiri {
+  background-image: url("../images/daiquiri.jpg");
+}
+
+.mojito {
+  background-image: url("../images/mojito.jpg");
+}
+
+.sotb {
+  background-image: url("../images/sex-on-the-beach.jpg");
+}
+
+.negroni {
+  background-image: url("../images/negroni.jpg");
+}
+
+.bloody {
+  background-image: url("../images/bloody-mary.jpg");
+}
+
+.dry {
+  background-image: url("../images/dry-martini.jpg");
 }
 
 @media screen and (min-width: 320px) and (max-width: 425px) {
@@ -797,4 +893,69 @@ body p {
     width: 27em;
     height: 35em;
   }
+}
+.section-cocktails {
+  display: flex;
+}
+.section-cocktails .section-title--2 {
+  font-size: 1.75em;
+  font-weight: 600;
+  color: #3A4004;
+}
+.section-cocktails .container-sb {
+  width: 80%;
+  display: flex;
+  justify-content: center;
+}
+.section-cocktails .container-sb .search-bar {
+  width: 25em;
+}
+.section-cocktails .container-sb .search-bar .input {
+  height: 2em;
+  font-weight: 400;
+  -webkit-padding-start: 0.5rem;
+          padding-inline-start: 0.5rem;
+  border-radius: 0.5em;
+  border: 1px solid #3A4004;
+}
+.section-cocktails .container-sb .search-bar .button {
+  height: 2em;
+  width: 2em;
+  border-radius: 0.5em;
+  color: #FAF6E7;
+  background-color: #3A4004;
+}
+
+.content-bebidas {
+  display: flex;
+  gap: 2em;
+}
+.content-bebidas .aside {
+  width: 25em;
+  border-right: 3px solid #3A4004;
+}
+.content-bebidas .aside .section-title--3 {
+  font-size: 1.3em;
+  font-weight: 600;
+  color: #3A4004;
+}
+.content-bebidas .aside .dropdown-buttons {
+  width: 4.9em;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5em;
+}
+.content-bebidas .aside .dropdown-buttons .btn-secondary {
+  background-color: #F2E4B9;
+  color: #3A4004;
+  border-color: #3A4004;
+}
+.content-bebidas .aside .dropdown-buttons .dropdown-menu {
+  background-color: #F2E4B9;
+}
+.content-bebidas .cards-container--b {
+  display: flex;
+  justify-content: flex-start;
+  gap: 1em;
+  flex-wrap: wrap;
 }/*# sourceMappingURL=style.css.map */

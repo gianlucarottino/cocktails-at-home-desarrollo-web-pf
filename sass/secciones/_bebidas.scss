@@ -1,0 +1,76 @@
+.section-cocktails {
+    display: flex;
+
+    .section-title--2 {
+        font-size: 1.75em;
+        font-weight: 600;
+        color: $colorprimario;
+    }
+
+    .container-sb {
+        width: 80%;
+        display: flex;
+        justify-content: center;
+
+        .search-bar {
+            width: 25em;
+
+            .input {
+                height: 2em;
+                font-weight: 400;
+                padding-inline-start: 0.5rem;
+                border-radius: 0.5em;
+                border: 1px solid $colorprimario; 
+            }
+
+            .button {
+                height: 2em;
+                width: 2em;
+                border-radius: 0.5em;
+                color: $colorsecundario;
+                background-color: $colorprimario;
+            }
+        }
+    }
+}
+
+
+.content-bebidas {
+    display: flex;
+    gap: 2em;
+
+    .aside {
+        width: 25em;
+        border-right: 3px solid $colorprimario;
+
+        .section-title--3 {
+            font-size: 1.3em;
+            font-weight: 600;
+            color: $colorprimario;
+        }
+    
+        .dropdown-buttons {
+            width: 4.9em;
+            display: flex;
+            flex-direction: column;
+            gap: 0.5em;
+
+            .btn-secondary {
+                background-color: $coloracento;
+                color: $colorprimario;
+                border-color: $colorprimario;
+            }
+
+            .dropdown-menu {
+                background-color: $coloracento
+            }
+        }
+    }
+    
+    .cards-container--b {
+        display: flex;
+        justify-content: flex-start;
+        gap: 1em;
+        flex-wrap: wrap;
+    }
+}

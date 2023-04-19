@@ -11,6 +11,8 @@
     <title>Cocktails at Home</title>
     <!-- favicon -->
     <link rel="icon" type="image/x-icon" href="../images/favicon-cocktails-at-home.png">
+    <!-- fontawesome -->
+    <script src="https://kit.fontawesome.com/2336df5999.js" crossorigin="anonymous"></script>
 </head>
 <body>
     <!-- header -->
@@ -50,13 +52,204 @@
                             <a class="boton-header" href="./ingresar.html">Ingresar</a>
                         </li>
                         <li>
-                            <a class="boton-header subscribe" href="./suscribirse.html">Suscribirse</a>
+                            <a class="boton-header suscribe" href="./suscribirse.html">Suscribirse</a>
                         </li>
                     </ul>
                 </div>
             </div>
         </nav>
     </header>
+    <main class="section">
+        <h1 class="section-title">Bebidas</h1>
+        <p class="section-text">Los cócteles y bebidas son primordiales en un buen almuerzo o en una cena. Aprende qué ingredientes combinar para crear bebidas que sorprendan a todos o revisa esa receta de toda la vida pero que te genera dudas... Quédate en Cocktails at home y encuentra un increíble listado de recetas de bebidas para todas las ocasiones, guarda tus favoritas y ¡disfruta!</p>
+        <section class="section">
+            <div class="section-cocktails">
+                <h2 class="section-title--2">Cocteles</h2>
+                <div class="container-sb">
+                    <div class="search-bar">
+                        <input aria-label="Entrada de búsqueda" type="search" class="input" placeholder="Buscar cocteles" autocapitalize="off" autocorrect="off" maxlength="150" spellcheck="false">
+                        <button class="button" type="button" aria-label="Botón de búsqueda">
+                            <i class="fa-solid fa-magnifying-glass"></i>
+                    </div>
+                </div>
+            </div>
+            <div class="content-bebidas">
+                <aside class="aside">
+                    <h3 class="section-title--3">Filtrar por</h3>
+                    <div class="dropdown-buttons">
+                        <div class="btn-group">
+                            <button class="btn btn-secondary btn-sm dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                Ordenar
+                            </button>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="#">Nombre del coctel</a></li>
+                                <li><a class="dropdown-item" href="#">Fuerza del coctel</a></li>
+                                <li><a class="dropdown-item" href="#">Fecha en que se agregó</a></li>
+                            </ul>
+                        </div>
+                        <div class="btn-group">
+                            <button class="btn btn-secondary btn-sm dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                Fuerza
+                            </button>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="#">Sin alcohol</a></li>
+                                <li><a class="dropdown-item" href="#">Suave (1%-10%)</a></li>
+                                <li><a class="dropdown-item" href="#">Medio (11%-19%)</a></li>
+                                <li><a class="dropdown-item" href="#">Fuerte (20%-40%)</a></li>
+                            </ul>
+                        </div>
+                        <div class="btn-group">
+                            <button class="btn btn-secondary btn-sm dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                Ingredientes base
+                            </button>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="#">Ron</a></li>
+                                <li><a class="dropdown-item" href="#">Whisky</a></li>
+                                <li><a class="dropdown-item" href="#">Ginebra</a></li>
+                                <li><a class="dropdown-item" href="#">Tequila</a></li>
+                                <li><a class="dropdown-item" href="#">Brandy</a></li>
+                                <li><a class="dropdown-item" href="#">Vodka</a></li>
+                                <li><a class="dropdown-item" href="#">Champagne</a></li>
+                            </ul>
+                        </div>
+                        <div class="btn-group">
+                            <button class="btn btn-secondary btn-sm dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                Dificultad
+                            </button>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="#">Muy baja</a></li>
+                                <li><a class="dropdown-item" href="#">Baja</a></li>
+                                <li><a class="dropdown-item" href="#">Media</a></li>
+                                <li><a class="dropdown-item" href="#">Alta</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </aside>
+                <div class="cards-container--b">
+                    <div class="card-bebidas">
+                        <div class="linear-gradient">
+                            <div class="card-text">
+                                <h4>Pisco Sour</h4>
+                                <div class="buttons-container">
+                                    <button class="button secondary">
+                                        <i class="fa-regular fa-heart fa-xl"></i>
+                                    </button>
+                                    <button class="button primary">Ver receta
+                                        <i class="fa-solid fa-arrow-right"></i>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card-bebidas caipirinha">
+                        <div class="linear-gradient">
+                            <div class="card-text">
+                                <h4>Caipirinha</h4>
+                                <div class="buttons-container">
+                                    <button class="button secondary">
+                                        <i class="fa-regular fa-heart fa-xl"></i>
+                                    </button>
+                                    <button class="button primary">Ver receta
+                                        <i class="fa-solid fa-arrow-right"></i>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card-bebidas daiquiri">
+                        <div class="linear-gradient">
+                            <div class="card-text">
+                                <h4>Daiquiri</h4>
+                                <div class="buttons-container">
+                                    <button class="button secondary">
+                                        <i class="fa-regular fa-heart fa-xl"></i>
+                                    </button>
+                                    <button class="button primary">Ver receta
+                                        <i class="fa-solid fa-arrow-right"></i>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card-bebidas mojito">
+                        <div class="linear-gradient">
+                            <div class="card-text">
+                                <h4>Mojito</h4>
+                                <div class="buttons-container">
+                                    <button class="button secondary">
+                                        <i class="fa-regular fa-heart fa-xl"></i>
+                                    </button>
+                                    <button class="button primary">Ver receta
+                                        <i class="fa-solid fa-arrow-right"></i>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card-bebidas sotb">
+                        <div class="linear-gradient">
+                            <div class="card-text">
+                                <h4>Sexo en la playa</h4>
+                                <div class="buttons-container">
+                                    <button class="button secondary">
+                                        <i class="fa-regular fa-heart fa-xl"></i>
+                                    </button>
+                                    <button class="button primary">Ver receta
+                                        <i class="fa-solid fa-arrow-right"></i>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card-bebidas negroni">
+                        <div class="linear-gradient">
+                            <div class="card-text">
+                                <h4>Negroni</h4>
+                                <div class="buttons-container">
+                                    <button class="button secondary">
+                                        <i class="fa-regular fa-heart fa-xl"></i>
+                                    </button>
+                                    <button class="button primary">Ver receta
+                                        <i class="fa-solid fa-arrow-right"></i>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card-bebidas bloody">
+                        <div class="linear-gradient">
+                            <div class="card-text">
+                                <h4>Bloody Mary</h4>
+                                <div class="buttons-container">
+                                    <button class="button secondary">
+                                        <i class="fa-regular fa-heart fa-xl"></i>
+                                    </button>
+                                    <button class="button primary">Ver receta
+                                        <i class="fa-solid fa-arrow-right"></i>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card-bebidas dry">
+                        <div class="linear-gradient">
+                            <div class="card-text">
+                                <h4>Dry Martini</h4>
+                                <div class="buttons-container">
+                                    <button class="button secondary">
+                                        <i class="fa-regular fa-heart fa-xl"></i>
+                                    </button>
+                                    <button class="button primary">Ver receta
+                                        <i class="fa-solid fa-arrow-right"></i>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
     <footer class="grid-footer">
         <!-- top -->
         <!-- text -->
