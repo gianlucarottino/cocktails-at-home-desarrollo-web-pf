@@ -14,7 +14,6 @@ body {
   flex-direction: column;
   margin-top: 0.75rem;
   margin-bottom: 0.75rem;
-  overflow-x: hidden;
 }
 body p {
   margin: 0;

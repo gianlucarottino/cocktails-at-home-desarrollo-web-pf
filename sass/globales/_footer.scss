@@ -1,3 +1,5 @@
+// GRID //
+
 .grid-footer {
     width: 100%;
     height: 20rem;
@@ -11,6 +13,8 @@
     justify-items: center;
     align-items: center;
     margin-top: 2em;
+
+    // footer text //
 
     .top-footer-text {
         grid-area: footer-text;
@@ -27,6 +31,8 @@
             font-size: medium;
         }
     }
+
+    // footer form //
 
     .top-footer-form {
         grid-area: footer-form;
@@ -60,6 +66,8 @@
             }
         }     
     }
+
+    // footer marca //
 
     .mid-footer-marca {
         grid-area: footer-marca;
@@ -100,6 +108,8 @@
         }
     }
 
+    // footer nav //
+
     .mid-footer-nav {
         grid-area: footer-nav;
         display: flex;
@@ -116,6 +126,8 @@
             }
         }
     }
+
+    // footer copyright,etc //
 
     .bottom-footer {
         width: 100%;

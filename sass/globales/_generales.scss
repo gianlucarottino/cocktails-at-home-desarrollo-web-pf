@@ -1,10 +1,16 @@
+// import google fonts | Tipography: Inter //
+
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;500;600;700;800;900&display=swap');
+
+// reset estilos navegador //
 
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
+
+// body generales //
 
 body {
     background-color: $colorsecundario;
@@ -15,7 +21,6 @@ body {
     flex-direction: column;
     margin-top: 0.75rem;
     margin-bottom: 0.75rem;
-    overflow-x: hidden;
 
     p {
         margin: 0;
