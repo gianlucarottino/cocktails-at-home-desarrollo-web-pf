@@ -90,10 +90,11 @@ body p {
   width: min-content;
   display: flex;
   flex-direction: column;
-  background-color: #F2E4B9;
+  background: linear-gradient(230deg, #FAF6E7, #F2E4B9);
   padding: 1.25em;
   border-radius: 20px;
   gap: 1em;
+  box-shadow: 2px 3px 15px rgba(0, 0, 0, 0.2117647059);
 }
 .card-cocktail .img-container {
   width: 23.44em;
@@ -150,6 +151,7 @@ body p {
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
+  box-shadow: 2px 3px 15px rgba(0, 0, 0, 0.2117647059);
 }
 .card-bebidas .linear-gradient {
   height: 100%;
@@ -187,15 +189,13 @@ body p {
   width: 50%;
   height: 3em;
   font-weight: 600;
-  color: #3A4004;
+  color: #FAF6E7;
   font-size: medium;
-  background-color: #FAF6E7;
+  background-color: #3A4004;
   border-radius: 0.5em;
   border: none;
 }
 .card-bebidas .linear-gradient .card-text .buttons-container .primary {
-  color: #FAF6E7;
-  background-color: #3A4004;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -206,6 +206,8 @@ body p {
 }
 .card-bebidas .linear-gradient .card-text .buttons-container .secondary {
   width: 3em;
+  color: #3A4004;
+  background-color: #FAF6E7;
 }
 
 .caipirinha {
@@ -862,6 +864,7 @@ body p {
   padding: 2em;
   border-radius: 1em;
   gap: 0.5em;
+  box-shadow: 2px 3px 15px rgba(0, 0, 0, 0.2117647059);
 }
 .nosotros .context-container .flex-item .text-modif {
   color: #FAF6E7;

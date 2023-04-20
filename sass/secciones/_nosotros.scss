@@ -75,6 +75,7 @@ $color4: #F2E4B9;
             padding: 2em;
             border-radius: 1em;
             gap: 0.5em;
+            box-shadow: map-get($map: $estilos, $key: shadow-card);
             
             .text-modif {
                 color: $colorsecundario;

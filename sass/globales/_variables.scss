@@ -11,3 +11,20 @@
     // color acento //
 
     $coloracento: #F2E4B9;
+
+// map get estilos //
+
+$estilos: (
+    shadow-card: 2px 3px 15px #00000036,
+);
+
+// mixins //
+
+@mixin button-primary {
+    font-weight: 600;
+    color: $colorsecundario;
+    font-size: medium;
+    background-color: $colorprimario;
+    border-radius: 0.5em;
+    border: none;
+}
