@@ -173,6 +173,7 @@ body p {
   font-size: x-large;
   font-weight: 700;
   color: #FAF6E7;
+  text-align: start;
 }
 .card-bebidas .linear-gradient .card-text p {
   font-size: smaller;
@@ -958,4 +959,61 @@ body p {
   justify-content: flex-start;
   gap: 1em;
   flex-wrap: wrap;
+}
+
+@media screen and (min-width: 320px) and (max-width: 768px) {
+  .section {
+    gap: 1.25em;
+  }
+  .section .section {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5em;
+    margin: 0;
+  }
+  .section .section .section-cocktails {
+    flex-direction: column;
+  }
+  .section .section .section-cocktails .section-title--2 {
+    font-size: 1.5em;
+  }
+  .section .section .section-cocktails .container-sb {
+    width: 100%;
+  }
+  .section .section .content-bebidas {
+    flex-direction: column;
+    gap: 1em;
+  }
+  .section .section .content-bebidas .aside {
+    width: 100%;
+    border-right: none;
+  }
+  .section .section .content-bebidas .aside .section-title--3 {
+    font-size: 1.1em;
+  }
+  .section .section .content-bebidas .aside .dropdown-buttons {
+    width: 100%;
+    align-items: center;
+  }
+  .section .section .content-bebidas .aside .dropdown-buttons .btn-group {
+    width: 60%;
+  }
+  .section .section .content-bebidas .cards-container--b {
+    justify-content: center;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 1440px) {
+  .section .section {
+    margin: 2em 0em;
+  }
+  .section .section .section-cocktails {
+    flex-direction: row;
+  }
+  .section .section .content-bebidas {
+    flex-direction: row;
+  }
+  .section .section .content-bebidas .aside .dropdown-buttons {
+    width: 11em;
+    align-items: flex-start;
+  }
 }/*# sourceMappingURL=style.css.map */
