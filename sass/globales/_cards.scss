@@ -170,8 +170,48 @@ background-image: url("../images/bloody-mary.jpg");
     background-image: url("../images/dry-martini.jpg");
 }
 
+// card planes //
 
-// NEDIA QUERIES //
+.card-plan {
+    width: 23em;
+    height: 22em;
+    padding: 2em;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    background: linear-gradient(230deg, #FAF6E7, #F2E4B9);
+    border-radius: 1em;
+    text-align: start;
+    box-shadow: 2px 3px 15px #00000036;
+
+    .top-card {
+
+        h3 {
+            margin: 0;
+            color: $colorprimario;
+            font-weight: 700;
+        }
+
+        .price {
+            font-size: 1.2em;
+            font-weight: 600;
+        }
+    }
+
+    .button {
+        height: 3em;
+        font-weight: 600;
+        color: $colorsecundario;
+        font-size: medium;
+        background-color: $colorprimario;
+        border-radius: 0.5em;
+        border: none;
+    }
+}
+
+// MEDIA QUERIES //
+
+    // cards index //
 
     // breakpoint 1: 320 //
 
@@ -259,3 +299,17 @@ background-image: url("../images/bloody-mary.jpg");
                 }
             }
         }
+
+// MEDIA QUERIES //
+
+    // cards planes //
+
+    // breakpoint 1: 320 //
+
+    @media screen and (min-width:320px) and (max-width:768px) {
+        .card-plan {
+            padding: 1.25em;
+            height: 19em;
+            width: 19em;
+        }
+    }

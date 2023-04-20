@@ -1,0 +1,46 @@
+.planes {
+    gap: 1.5em;
+
+    .section-content {
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 1.75em;
+
+        .section-title--2 {
+            font-size: 1.75em;
+            font-weight: 600;
+            color: $colorprimario;
+        }
+
+        .cards-container--p {
+            width: 60%;
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 1.5em;
+        }
+    }
+}
+
+// MEDIA QUERIES //
+
+    // breakpoint 1: 320 //
+
+    @media screen and (min-width:320px) and (max-width:768px) {
+        .planes {
+
+            .section-content {
+
+                .section-title--2 {
+                    font-size: 1.5em;
+                }
+
+                .cards-container--p {
+                    width: 100%;
+                }
+            }
+        }
+    }

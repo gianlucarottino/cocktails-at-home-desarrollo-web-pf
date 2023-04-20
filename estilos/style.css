@@ -236,6 +236,37 @@ body p {
   background-image: url("../images/dry-martini.jpg");
 }
 
+.card-plan {
+  width: 23em;
+  height: 22em;
+  padding: 2em;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  background: linear-gradient(230deg, #FAF6E7, #F2E4B9);
+  border-radius: 1em;
+  text-align: start;
+  box-shadow: 2px 3px 15px rgba(0, 0, 0, 0.2117647059);
+}
+.card-plan .top-card h3 {
+  margin: 0;
+  color: #3A4004;
+  font-weight: 700;
+}
+.card-plan .top-card .price {
+  font-size: 1.2em;
+  font-weight: 600;
+}
+.card-plan .button {
+  height: 3em;
+  font-weight: 600;
+  color: #FAF6E7;
+  font-size: medium;
+  background-color: #3A4004;
+  border-radius: 0.5em;
+  border: none;
+}
+
 @media screen and (min-width: 320px) and (max-width: 425px) {
   .card-cocktail {
     width: 100%;
@@ -297,6 +328,13 @@ body p {
   }
   .card-cocktail .text-container .description-container .card-text--mobile {
     display: none;
+  }
+}
+@media screen and (min-width: 320px) and (max-width: 768px) {
+  .card-plan {
+    padding: 1.25em;
+    height: 19em;
+    width: 19em;
   }
 }
 .grid-footer {
@@ -1014,5 +1052,37 @@ body p {
   .section .section .content-bebidas .aside .dropdown-buttons {
     width: 11em;
     align-items: flex-start;
+  }
+}
+.planes {
+  gap: 1.5em;
+}
+.planes .section-content {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.75em;
+}
+.planes .section-content .section-title--2 {
+  font-size: 1.75em;
+  font-weight: 600;
+  color: #3A4004;
+}
+.planes .section-content .cards-container--p {
+  width: 60%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1.5em;
+}
+
+@media screen and (min-width: 320px) and (max-width: 768px) {
+  .planes .section-content .section-title--2 {
+    font-size: 1.5em;
+  }
+  .planes .section-content .cards-container--p {
+    width: 100%;
   }
 }/*# sourceMappingURL=style.css.map */
