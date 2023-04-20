@@ -488,6 +488,13 @@ body p {
 .grid-footer .mid-footer-nav .nav-items .title-nav {
   font-weight: 700;
 }
+.grid-footer .mid-footer-nav .nav-items a {
+  text-decoration: none;
+  color: #3A4004;
+}
+.grid-footer .mid-footer-nav .nav-items p {
+  color: #3A4004;
+}
 .grid-footer .bottom-footer {
   width: 100%;
   grid-area: footer-bottom;

@@ -128,6 +128,15 @@
             .title-nav {
                 font-weight: 700;
             }
+
+            a {
+                text-decoration: none;
+                color: $colorprimario;
+            }
+
+            p {
+                color: $colorprimario;
+            }
         }
     }
 
