@@ -30,9 +30,9 @@ body p {
 }
 .header-desktop .nav-native .nav-link {
   padding: 1rem;
-  color: #3A4004;
   font-weight: 600;
   font-size: 18px;
+  padding-bottom: 5px;
 }
 .header-desktop .nav-native .logo-container {
   width: 8rem;
@@ -75,6 +75,16 @@ body p {
   color: #FAF6E7;
   background-color: #3A4004;
   border-radius: 1em;
+  transition: all 1s ease;
+}
+.header-desktop .nav-native .right-header ul li .suscribe:hover {
+  color: #3A4004;
+  background-color: #F2E4B9;
+}
+
+.navbar-light .navbar-nav .nav-link.active {
+  color: #677827;
+  border-bottom: 3px solid #677827;
 }
 
 @media screen and (min-width: 320px) and (max-width: 1366px) {
@@ -152,6 +162,7 @@ body p {
   background-size: cover;
   background-position: center;
   box-shadow: 2px 3px 15px rgba(0, 0, 0, 0.2117647059);
+  transition: all 0.5s ease-out;
 }
 .card-bebidas .linear-gradient {
   height: 100%;
@@ -195,6 +206,10 @@ body p {
   border-radius: 0.5em;
   border: none;
 }
+.card-bebidas .linear-gradient .card-text .buttons-container .button:hover {
+  color: #3A4004;
+  background-color: #F2E4B9;
+}
 .card-bebidas .linear-gradient .card-text .buttons-container .primary {
   display: flex;
   justify-content: center;
@@ -208,6 +223,10 @@ body p {
   width: 3em;
   color: #3A4004;
   background-color: #FAF6E7;
+}
+
+.card-bebidas:hover {
+  box-shadow: 2px 5px 8px rgba(26, 26, 26, 0.609);
 }
 
 .caipirinha {
@@ -249,6 +268,7 @@ body p {
   border-radius: 1em;
   text-align: start;
   box-shadow: 2px 3px 15px rgba(0, 0, 0, 0.2117647059);
+  transition: all 0.5s ease-out;
 }
 .card-plan .top-card h3 {
   margin: 0;
@@ -267,6 +287,14 @@ body p {
   background-color: #3A4004;
   border-radius: 0.5em;
   border: none;
+}
+.card-plan .button:hover {
+  color: #3A4004;
+  background-color: #F2E4B9;
+}
+
+.card-plan:hover {
+  box-shadow: -1px -1px 11px rgba(26, 26, 26, 0.4);
 }
 
 @media screen and (min-width: 320px) and (max-width: 425px) {
@@ -332,6 +360,23 @@ body p {
     display: none;
   }
 }
+@media screen and (min-width: 1024px) {
+  .card-cocktail {
+    height: 23em;
+    transition: all 0.5s ease-out;
+  }
+  .card-cocktail .description-container {
+    display: none;
+  }
+  .card-cocktail:hover {
+    height: -moz-max-content;
+    height: max-content;
+    box-shadow: -1px -1px 11px rgba(26, 26, 26, 0.4);
+  }
+  .card-cocktail:hover .description-container {
+    display: block;
+  }
+}
 @media screen and (min-width: 320px) and (max-width: 768px) {
   .card-plan {
     padding: 1.25em;
@@ -393,6 +438,10 @@ body p {
   border-radius: 10px;
   color: #FAF6E7;
   background-color: #3A4004;
+}
+.grid-footer .top-footer-form .form .button:hover {
+  color: #3A4004;
+  background-color: #F2E4B9;
 }
 .grid-footer .mid-footer-marca {
   grid-area: footer-marca;
@@ -570,6 +619,7 @@ body p {
   padding: 1em;
   background-color: #3A4004;
   border-radius: 1em;
+  transition: all 1s ease;
 }
 .boton-cta-main .text-boton {
   text-decoration: none;
@@ -577,6 +627,13 @@ body p {
   font-weight: 600;
   font-size: 20px;
   color: #FAF6E7;
+}
+
+.boton-cta-main:hover {
+  background-color: #F2E4B9;
+}
+.boton-cta-main:hover .text-boton {
+  color: #3A4004;
 }
 
 .section {

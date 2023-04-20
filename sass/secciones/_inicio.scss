@@ -62,6 +62,7 @@
     padding: 1em;
     background-color: $colorprimario;
     border-radius: 1em;
+    transition: all 1s ease;
     
     // anchord //
 
@@ -71,6 +72,14 @@
         font-weight: 600;
         font-size: 20px;
         color: $colorsecundario;
+    }
+}
+
+.boton-cta-main:hover {
+    background-color: $coloracento;
+
+    .text-boton {
+        color: $colorprimario;
     }
 }
 

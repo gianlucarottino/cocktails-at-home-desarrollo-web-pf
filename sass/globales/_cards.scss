@@ -10,7 +10,6 @@
     gap: 1em;
     box-shadow: map-get($map: $estilos, $key: shadow-card);
 
-
     .img-container {
         width: 23.44em;
         height: auto;
@@ -76,7 +75,7 @@
     background-size: cover;
     background-position: center;
     box-shadow: map-get($map: $estilos, $key: shadow-card);
-
+    transition: all 0.5s ease-out;
 
     .linear-gradient {
         height: 100%;
@@ -118,6 +117,10 @@
                     @include button-primary
                 }
 
+                .button:hover {
+                    @include button-primary--hover
+                }
+
                 .primary {
                     display: flex;
                     justify-content: center;
@@ -137,6 +140,10 @@
             }
         }
     }
+}
+
+.card-bebidas:hover {
+    box-shadow: 2px 5px 8px rgba(26, 26, 26, 0.609);
 }
 
 // background images modif //
@@ -182,6 +189,7 @@ background-image: url("../images/bloody-mary.jpg");
     border-radius: 1em;
     text-align: start;
     box-shadow: map-get($map: $estilos, $key: shadow-card);
+    transition: all 0.5s ease-out;
 
     .top-card {
 
@@ -201,6 +209,14 @@ background-image: url("../images/bloody-mary.jpg");
         height: 3em;
         @include button-primary
     }
+
+    .button:hover {
+        @include button-primary--hover
+    }
+}
+
+.card-plan:hover {
+    box-shadow: -1px -1px 11px rgba(26, 26, 26, 0.4);
 }
 
 // MEDIA QUERIES //
@@ -292,6 +308,27 @@ background-image: url("../images/bloody-mary.jpg");
                     }
                 }
             }
+        }
+
+        @media screen and (min-width:1024px) {
+            .card-cocktail {
+                height: 23em;
+                transition: all 0.5s ease-out;
+
+                .description-container {
+                    display: none;
+                }
+            }
+
+            .card-cocktail:hover {
+                height: max-content;
+                box-shadow: -1px -1px 11px rgba(26, 26, 26, 0.4);
+            
+                .description-container {
+                    display: block;
+                }
+            }            
+            
         }
 
 // MEDIA QUERIES //

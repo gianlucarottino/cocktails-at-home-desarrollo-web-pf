@@ -14,9 +14,9 @@
         
         .nav-link {
             padding: 1rem;
-            color: $colorprimario;
             font-weight: 600;
             font-size: 18px;
+            padding-bottom: 5px;
         }
         
         // logo //
@@ -70,9 +70,25 @@
                     color: $colorsecundario;
                     background-color: $colorprimario;
                     border-radius: 1em;
+                    transition: all 1s ease;
+                    }
+
+                    .suscribe:hover {
+                        @include button-primary--hover
                     }
                 }
             }
+        }
+    }
+}
+
+.navbar-light {
+
+    .navbar-nav {
+
+        .nav-link.active {
+            color: #677827;
+            border-bottom: 3px solid #677827;
         }
     }
 }

@@ -64,6 +64,10 @@
                 color: $colorsecundario;
                 background-color: $colorprimario;
             }
+
+            .button:hover {
+                @include button-primary--hover
+            }
         }     
     }
 

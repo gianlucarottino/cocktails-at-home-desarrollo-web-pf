@@ -28,3 +28,8 @@ $estilos: (
     border-radius: 0.5em;
     border: none;
 }
+
+@mixin button-primary--hover{
+    color: $colorprimario;
+    background-color: $coloracento;
+}
