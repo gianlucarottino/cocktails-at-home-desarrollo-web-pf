@@ -1,0 +1,72 @@
+.modal-edad {
+
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #111111bd;
+  display: flex;
+  visibility: hidden;
+
+  .modal-contenido {
+
+    width: 90%;
+    display: flex;
+    max-width: 550px;
+    max-height: 90%;
+    background-color: #FAF6E7;
+    margin: auto;
+    border-radius: 22px;
+    padding: 1em 3em;
+    gap: 1.75em;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+
+    img {
+
+      width: 13em;
+
+    }
+
+    .modal-title{
+
+      font-size: xx-large;
+      font-weight: 700;
+      color: $colorprimario;
+      margin-bottom: 5px;
+    }
+
+    p {
+
+      font-size: medium;
+
+    }
+
+    .modal-botones{
+
+      display: flex;
+      flex-direction: column;
+
+      .btn {
+  
+        padding: 0.75em 1em;
+        background-color: $colorsecundario;
+        border-radius: 1em;
+  
+      }
+  
+      .prim {
+  
+        background-color: $colorprimario;
+        color: $colorsecundario;
+        box-shadow: 1px 1px 7px -1px #111111bd;
+        margin-bottom: 5px;
+  
+      }
+
+    }
+  }
+}
+

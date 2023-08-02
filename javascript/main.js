@@ -1,5 +1,8 @@
-// Creamos coleccion vacia de cocteles
+/* // Creamos coleccion vacia de cocteles
 let array_cocteles = new Array();
+
+// Creamos coleccion vacia de usuarios
+let array_usuarios = new Array();
 
 // Generador de id para no tener que pasarlo manual
 let generador_id = 1;
@@ -75,10 +78,11 @@ function mostrarMenu() {
 
         // Menu de funcionalidades
         let menu = "Indique lo que deseas hacer: ";
-        menu += "\n1) Agregar nuevo coctel";
-        menu += "\n2) Ver lista de cocteles cargados";
-        menu += "\n3) Eliminar coctel";
-        menu += "\n4) Salir";
+        menu += "\n1) Iniciar sesion";
+        menu += "\n2) Agregar nuevo coctel";
+        menu += "\n3) Ver lista de cocteles cargados";
+        menu += "\n4) Eliminar coctel";
+        menu += "\n5) Salir";
 
         // Pedimos lo que desea hacer el usuario
         let respuesta = parseInt(prompt(menu).trim()); // trim() = elimina los espacios en blanco que podrían rodear la entrada del usuario 
@@ -86,18 +90,22 @@ function mostrarMenu() {
         switch (respuesta){
 
             case 1:
+                iniciarSesion();
+                break
+
+            case 2:
                 agregarCoctel();
                 break;
 
-            case 2:
+            case 3:
                 listearCocteles();
                 break;
 
-            case 3:
-                eliminarCoctel();
-                break
-
             case 4:
+                eliminarCoctel();
+                break;
+
+            case 5:
                 alert("Gracias por utilzar Cocktails at Home! Regresa cuando quieras");
                 bucle = false;
                 break;
@@ -113,3 +121,4 @@ function mostrarMenu() {
     }
 }
 
+ */

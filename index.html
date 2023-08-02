@@ -1,346 +1,579 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- meta description SEO -->
-    <meta name="description" content="Descubre el mundo de la coctelería en Cocktails at Home. Aprende a preparar cócteles con nuestras recetas ¡Únete a nosotros!">
-    <!-- meta keywords SEO -->
-    <meta name="keywords" content="Cocteleria, Recetas de cócteles, Preparación de cócteles, Ingredientes de cócteles, Tips de coctelería, Cócteles en casa, Aprender a hacer cócteles, Sabores de cócteles, Bartender en casa, Bebidas con alcohol">
-    <!-- link cdn bootstrap css  -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-    <!-- link css nativo -->
-    <link rel="stylesheet" href="./estilos/style.css">
-    <title>Cocktails at Home | Inicio</title>
-    <!-- favicon -->
-    <link rel="icon" type="image/x-icon" href="./images/favicon-cocktails-at-home.png">
-</head>
-<body>
-    <!-- header -->
-    <header class="header-desktop">
-        <!-- nav bar bootstrap -->
-        <nav class="navbar navbar-expand-lg navbar-light nav-native">
-            <div class="container-fluid">
-                <!-- logo header -->
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <!-- meta description SEO -->
+        <meta
+            name="description"
+            content="Descubre el mundo de la coctelería en Cocktails at Home. Aprende a preparar cócteles con nuestras recetas ¡Únete a nosotros!"
+        />
+        <!-- meta keywords SEO -->
+        <meta
+            name="keywords"
+            content="Cocteleria, Recetas de cócteles, Preparación de cócteles, Ingredientes de cócteles, Tips de coctelería, Cócteles en casa, Aprender a hacer cócteles, Sabores de cócteles, Bartender en casa, Bebidas con alcohol"
+        />
+        <!-- link cdn bootstrap css  -->
+        <link
+            href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+            rel="stylesheet"
+            integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+            crossorigin="anonymous"
+        />
+        <!-- link css nativo -->
+        <link rel="stylesheet" href="./estilos/style.css" />
+        <title>Cocktails at Home | Inicio</title>
+        <!-- favicon -->
+        <link
+            rel="icon"
+            type="image/x-icon"
+            href="./images/favicon-cocktails-at-home.png"
+        />
+    </head>
+    <body>
+        <!-- header -->
+        <header class="header-desktop">
+            <!-- nav bar bootstrap -->
+            <nav class="navbar navbar-expand-lg navbar-light nav-native">
+                <div class="container-fluid">
+                    <!-- logo header -->
+                    <div class="logo-container">
+                        <a href="./index.html">
+                            <img
+                                class="logo-header"
+                                src="./images/logo-horizontal.png"
+                                alt="logo de Cocktails at Home horizontal"
+                            />
+                        </a>
+                    </div>
+                    <button
+                        class="navbar-toggler"
+                        type="button"
+                        data-bs-toggle="collapse"
+                        data-bs-target="#navbarSupportedContent"
+                        aria-controls="navbarSupportedContent"
+                        aria-expanded="false"
+                        aria-label="Toggle navigation"
+                    >
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div
+                        class="collapse navbar-collapse"
+                        id="navbarSupportedContent"
+                    >
+                        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                            <li class="nav-item">
+                                <a
+                                    class="nav-link active"
+                                    aria-current="page"
+                                    href="./index.html"
+                                    >Inicio</a
+                                >
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="./pages/bebidas.html"
+                                    >Bebidas</a
+                                >
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="./pages/nosotros.html"
+                                    >Nosotros</a
+                                >
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="./pages/contacto.html"
+                                    >Contacto</a
+                                >
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="./pages/planes.html"
+                                    >Planes</a
+                                >
+                            </li>
+                        </ul>
+                    </div>
+                    <!-- right header buttons -->
+                    <div class="right-header">
+                        <ul>
+                            <li>
+                                <a class="boton-header" href="#">Ingresar</a>
+                            </li>
+                            <li>
+                                <a class="boton-header suscribe" href="#"
+                                    >Suscribirse</a
+                                >
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </header>
+        <!-- main content -->
+        <main class="main-content">
+            <div class="img-container">
+                <img
+                    src="./images/image-main-content.jpg"
+                    alt="imagen de contenido principal"
+                />
+            </div>
+            <div class="linear-gradient">
+                <!-- text & button content -->
+                <div class="main-text">
+                    <h1 class="heading-tag-main">
+                        Bienvenidos a Cocktails at Home
+                    </h1>
+                    <p class="description-main">
+                        La web que te facilitará recetas de miles de cocteles e
+                        información de Coctelería, a solo un par de clicks para
+                        que seas un experto.
+                    </p>
+                    <div class="boton-cta-main">
+                        <a href="#descubrir" class="text-boton"
+                            >¡Comenzá a mezclar!</a
+                        >
+                    </div>
+                </div>
+            </div>
+        </main>
+        <section class="section">
+            <!-- titulo -->
+            <h2 class="section-title">
+                Descubrir
+                <a name="descubrir"></a>
+            </h2>
+            <!-- texto -->
+            <h3>¿Qué cóctel vas a beber hoy?</h3>
+            <p class="section-text">
+                Cada semana añadimos nuevas recetas a la colección. Te
+                presentamos algunos de los cócteles más destacado. Échale un
+                vistazo a nuestra lista de cócteles.
+            </p>
+            <!-- card container -->
+            <div class="cards-container">
+                <!-- card item -->
+                <div class="card-cocktail">
+                    <div class="img-container">
+                        <img
+                            src="./images/pisco-sour.jpg"
+                            alt="foto coctel pisco sour"
+                        />
+                    </div>
+                    <div class="text-container">
+                        <div class="name-and-ratio-container">
+                            <p class="card-name">Pisco Sour</p>
+                            <div class="card-valoration">
+                                <img
+                                    src="./images/five-star-icon.png"
+                                    alt="valoracion 5 estrellas"
+                                />
+                            </div>
+                        </div>
+                        <div class="description-container">
+                            <p class="card-text">
+                                Disfrutar del Pisco Sour es todo un privilegio.
+                                Esta bebida típica de Perú y Chile es adictiva y
+                                muy refrescante. Y cualquier excusa es buena
+                                para tomarlo.
+                            </p>
+                            <p class="card-text--mobile">
+                                Disfrutar del Pisco Sour es todo un
+                                privilegio...
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <!-- card item -->
+                <div class="card-cocktail">
+                    <div class="img-container">
+                        <img
+                            src="./images/caipirinha.jpg"
+                            alt="foto coctel caipirinha"
+                        />
+                    </div>
+                    <div class="text-container">
+                        <div class="name-and-ratio-container">
+                            <p class="card-name">Caipirinha</p>
+                            <div class="card-valoration">
+                                <img
+                                    src="./images/five-star-icon.png"
+                                    alt="valoracion 5 estrellas"
+                                />
+                            </div>
+                        </div>
+                        <div class="description-container">
+                            <p class="card-text">
+                                Divertida, refrescante, alegre y chispeante. La
+                                Caipiriña es como meter en un vaso la esencia de
+                                Brasil.
+                            </p>
+                            <p class="card-text--mobile">
+                                Divertida, refrescante, alegre y chispeante...
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <!-- card item -->
+                <div class="card-cocktail">
+                    <div class="img-container">
+                        <img
+                            src="./images/daiquiri.jpg"
+                            alt="foto coctel daiquiri"
+                        />
+                    </div>
+                    <div class="text-container">
+                        <div class="name-and-ratio-container">
+                            <p class="card-name">Daiquiri</p>
+                            <div class="card-valoration">
+                                <img
+                                    src="./images/five-star-icon.png"
+                                    alt="valoracion 5 estrellas"
+                                />
+                            </div>
+                        </div>
+                        <div class="description-container">
+                            <p class="card-text">
+                                El famoso Daiquiri es sinónimo de playas
+                                paradisiacas, de olor a mar y del brillante sol
+                                de Cuba. Una refrescante bebida que te hará
+                                creer que estás en unas vacaciones...
+                            </p>
+                            <p class="card-text--mobile">
+                                El famoso Daiquiri es sinónimo de playas...
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <!-- card item -->
+                <div class="card-cocktail">
+                    <div class="img-container">
+                        <img
+                            src="./images/mojito.jpg"
+                            alt="foto coctel mojito"
+                        />
+                    </div>
+                    <div class="text-container">
+                        <div class="name-and-ratio-container">
+                            <p class="card-name">Mojito</p>
+                            <div class="card-valoration">
+                                <img
+                                    src="./images/five-star-icon.png"
+                                    alt="valoracion 5 estrellas"
+                                />
+                            </div>
+                        </div>
+                        <div class="description-container">
+                            <p class="card-text">
+                                Con base de Ron, la excitante lima y el
+                                delicioso aroma a hierbabuena, el Mojito se ha
+                                ganado su sitio como uno de los cócteles más
+                                consumidos del planeta.
+                            </p>
+                            <p class="card-text--mobile">
+                                Con base de Ron, la excitante lima y el...
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <!-- card item -->
+                <div class="card-cocktail">
+                    <div class="img-container">
+                        <img
+                            src="./images/sex-on-the-beach.jpg"
+                            alt="foto coctel sex on the beach"
+                        />
+                    </div>
+                    <div class="text-container">
+                        <div class="name-and-ratio-container">
+                            <p class="card-name">Sexo en la Playa</p>
+                            <div class="card-valoration">
+                                <img
+                                    src="./images/five-star-icon.png"
+                                    alt="valoracion 5 estrellas"
+                                />
+                            </div>
+                        </div>
+                        <div class="description-container">
+                            <p class="card-text">
+                                El cóctel Sexo en la Playa o Sex on the Beach,
+                                es una bebida con base de vodka, licor de
+                                melocotón, zumo de naranja y zumo de arándanos.
+                                Una mezcla refrescante...
+                            </p>
+                            <p class="card-text--mobile">
+                                Es una bebida con base de vodka...
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <!-- card item -->
+                <div class="card-cocktail">
+                    <div class="img-container">
+                        <img
+                            src="./images/negroni.jpg"
+                            alt="foto coctel negroni"
+                        />
+                    </div>
+                    <div class="text-container">
+                        <div class="name-and-ratio-container">
+                            <p class="card-name">Negroni</p>
+                            <div class="card-valoration">
+                                <img
+                                    src="./images/five-star-icon.png"
+                                    alt="valoracion 5 estrellas"
+                                />
+                            </div>
+                        </div>
+                        <div class="description-container">
+                            <p class="card-text">
+                                Uno de los cócteles más famosos del mundo.
+                                Descubierto por el Conde Negroni en 1919. De
+                                color brillante con su atrevido tono rojo rubí.
+                            </p>
+                            <p class="card-text--mobile">
+                                Uno de los cócteles más famosos del mundo...
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <!-- card item -->
+                <div class="card-cocktail">
+                    <div class="img-container">
+                        <img
+                            src="./images/bloody-mary.jpg"
+                            alt="foto coctel bloody-mary"
+                        />
+                    </div>
+                    <div class="text-container">
+                        <div class="name-and-ratio-container">
+                            <p class="card-name">Bloody Mary</p>
+                            <div class="card-valoration">
+                                <img
+                                    src="./images/five-star-icon.png"
+                                    alt="valoracion 5 estrellas"
+                                />
+                            </div>
+                        </div>
+                        <div class="description-container">
+                            <p class="card-text">
+                                Este explosivo cóctel de color rojo tiene un
+                                sabor tan delicioso como intenso. Anímate a
+                                probar un clásico de tomate, el Bloody Mary.
+                            </p>
+                            <p class="card-text--mobile">
+                                Este explosivo cóctel de color rojo...
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <!-- card item -->
+                <div class="card-cocktail">
+                    <div class="img-container">
+                        <img
+                            src="./images/dry-martini.jpg"
+                            alt="foto coctel dry-martini"
+                        />
+                    </div>
+                    <div class="text-container">
+                        <div class="name-and-ratio-container">
+                            <p class="card-name">Dry Martini</p>
+                            <div class="card-valoration">
+                                <img
+                                    src="./images/five-star-icon.png"
+                                    alt="valoracion 5 estrellas"
+                                />
+                            </div>
+                        </div>
+                        <div class="description-container">
+                            <p class="card-text">
+                                Dry Martini es uno de los cócteles más conocidos
+                                del planeta. Compuesto de ginebra y vermut seco,
+                                y adornado con una aceituna. Bebida fácil de
+                                preparar con un...
+                            </p>
+                            <p class="card-text--mobile">
+                                Dry Martini es uno de los cócteles más...
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Sección para la ventana modal -->
+        <section id="modal" class="modal-edad">
+            <div class="modal-contenido" id="modalCtn">
+                <div class="modal-texto">
+                    <img id="illustration" src="./images/warning-cuate.png" alt="illustration danger">
+                    <h2 class="modal-title">¿Sos mayor de edad?</h2>
+                    <p>
+                        Tenés que tener <strong>18 años o más</strong> para ingresar a la página. Verificá tu edad para poder ingresar.
+                    </p>
+                </div>
+                <div class="modal-botones">
+                    <button id="yesBtn" class="btn prim">Si, soy mayor</button>
+                    <button id="noBtn" class="btn ">No, soy menor</button>
+                </div>
+            </div>
+        </section>
+        <footer class="grid-footer">
+            <!-- top -->
+            <!-- text -->
+            <div class="top-footer-text">
+                <h4>¿Queres convertirte en un experto coctelero?</h4>
+                <p class="parrafos">
+                    Recibe en tu correo las mejores recetas, trucos, consejos y
+                    mucho más, al suscribirte a nuestro News.
+                </p>
+            </div>
+            <!-- form -->
+            <div class="top-footer-form">
+                <form class="form" action="suscribeNewslatter">
+                    <input
+                        placeholder="Correo electronico"
+                        type="email"
+                        id="mail"
+                        name="user_mail"
+                        class="input"
+                    />
+                    <button class="button" type="submit">Suscribirme</button>
+                </form>
+            </div>
+            <!-- mid -->
+            <div class="mid-footer-marca">
+                <!-- logo -->
                 <div class="logo-container">
                     <a href="./index.html">
-                        <img class="logo-header" src="./images/logo-horizontal.png" alt="logo de Cocktails at Home horizontal">
+                        <img
+                            src="./images/logo-horizontal.png"
+                            alt="logo horizontal"
+                        />
                     </a>
                 </div>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                        <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="./index.html">Inicio</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="./pages/bebidas.html">Bebidas</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="./pages/nosotros.html">Nosotros</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="./pages/contacto.html">Contacto</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="./pages/planes.html">Planes</a>
-                        </li>
-                    </ul>
-                </div>
-                <!-- right header buttons -->
-                <div class="right-header">
-                    <ul>
-                        <li>
-                            <a class="boton-header" href="#">Ingresar</a>
-                        </li>
-                        <li>
-                            <a class="boton-header suscribe" href="#">Suscribirse</a>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-        </nav>
-    </header>
-    <!-- main content -->
-    <main class="main-content">
-        <div class="img-container">
-            <img src="./images/image-main-content.jpg" alt="imagen de contenido principal">
-        </div>
-        <div class="linear-gradient">
-            <!-- text & button content -->
-            <div class="main-text">
-                <h1 class="heading-tag-main">
-                    Bienvenidos a Cocktails at Home
-                </h1>
-                <p class="description-main">La web que te facilitará recetas de miles de cocteles e información de Coctelería, a solo un par de clicks para que seas un experto.</p>
-                <div class="boton-cta-main">
-                    <a href="#descubrir" class="text-boton">¡Comenzá a mezclar!</a>
-                </div>
-            </div>
-        </div>
-    </main>
-    <section class="section">
-        <!-- titulo -->
-        <h2 class="section-title">Descubrir
-            <a name="descubrir"></a>
-        </h2>
-        <!-- texto -->
-        <h3>¿Qué cóctel vas a beber hoy?</h3>
-        <p class="section-text">Cada semana añadimos nuevas recetas a la colección. Te presentamos algunos de los cócteles más destacado. Échale un vistazo a nuestra lista de cócteles.</p>
-        <!-- card container -->
-        <div class="cards-container">
-            <!-- card item -->
-            <div class="card-cocktail">
-                <div class="img-container">
-                    <img src="./images/pisco-sour.jpg" alt="foto coctel pisco sour">
-                </div>
-                <div class="text-container">
-                    <div class="name-and-ratio-container">
-                        <p class="card-name">Pisco Sour</p>
-                        <div class="card-valoration">
-                            <img src="./images/five-star-icon.png" alt="valoracion 5 estrellas">
+                <!-- redes -->
+                <div class="mid-footer-redes">
+                    <p class="redes-comment">Seguinos en nuestras redes</p>
+                    <div class="icons-redes">
+                        <div class="icon-container">
+                            <a
+                                href="https://www.facebook.com/"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                            >
+                                <img
+                                    src="./images/icons-redes/icons8-facebook-nuevo-50.png"
+                                    alt="red social facebook"
+                                />
+                            </a>
+                        </div>
+                        <div class="icon-container">
+                            <a
+                                href="https://www.instagram.com/?hl=es"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                            >
+                                <img
+                                    src="./images/icons-redes/icons8-instagram-50.png"
+                                    alt="red social instagram"
+                                />
+                            </a>
+                        </div>
+                        <div class="icon-container">
+                            <a
+                                href="https://twitter.com/home"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                            >
+                                <img
+                                    src="./images/icons-redes/icons8-twitter-50.png"
+                                    alt="red social twitter"
+                                />
+                            </a>
+                        </div>
+                        <div class="icon-container">
+                            <a
+                                href="https://www.tiktok.com/es/"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                            >
+                                <img
+                                    src="./images/icons-redes/tik-tok.png"
+                                    alt="red social tik tok"
+                                />
+                            </a>
+                        </div>
+                        <div class="icon-container">
+                            <a
+                                href="https://www.linkedin.com/feed/"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                            >
+                                <img
+                                    src="./images/icons-redes/linkedin.png"
+                                    alt="red social linkedIn"
+                                />
+                            </a>
                         </div>
                     </div>
-                    <div class="description-container">
-                        <p class="card-text">Disfrutar del Pisco Sour es todo un privilegio. Esta bebida típica de Perú y Chile es adictiva y muy refrescante. Y cualquier excusa es buena para tomarlo.</p>
-                        <p class="card-text--mobile">Disfrutar del Pisco Sour es todo un privilegio...</p>
-                    </div>
                 </div>
             </div>
-            <!-- card item -->
-            <div class="card-cocktail">
-                <div class="img-container">
-                    <img src="./images/caipirinha.jpg" alt="foto coctel caipirinha">
+            <!-- nav footer -->
+            <div class="mid-footer-nav">
+                <div class="nav-items">
+                    <a href="#descubrir">
+                        <p class="title-nav">Descubrir</p>
+                    </a>
+                    <p>Colecciones</p>
+                    <p>Recetas semanales</p>
+                    <p>Juegos para tomar</p>
                 </div>
-                <div class="text-container">
-                    <div class="name-and-ratio-container">
-                        <p class="card-name">Caipirinha</p>
-                        <div class="card-valoration">
-                            <img src="./images/five-star-icon.png" alt="valoracion 5 estrellas">
-                        </div>
-                    </div>
-                    <div class="description-container">
-                        <p class="card-text">Divertida, refrescante, alegre y chispeante. La Caipiriña es como meter en un vaso la esencia de Brasil.</p>
-                        <p class="card-text--mobile">Divertida, refrescante, alegre y chispeante...</p>
-                    </div>
+                <div class="nav-items">
+                    <p class="title-nav">Bebidas</p>
+                    <p>Cocteles</p>
+                    <p>Ingredientes</p>
                 </div>
-            </div>
-            <!-- card item -->
-            <div class="card-cocktail">
-                <div class="img-container">
-                    <img src="./images/daiquiri.jpg" alt="foto coctel daiquiri">
+                <div class="nav-items">
+                    <p class="title-nav">Institucional</p>
+                    <p>Sobre nosotros</p>
+                    <p>Contactanos</p>
                 </div>
-                <div class="text-container">
-                    <div class="name-and-ratio-container">
-                        <p class="card-name">Daiquiri</p>
-                        <div class="card-valoration">
-                            <img src="./images/five-star-icon.png" alt="valoracion 5 estrellas">
-                        </div>
-                    </div>
-                    <div class="description-container">
-                        <p class="card-text">El famoso Daiquiri es sinónimo de playas paradisiacas, de olor a mar y del brillante sol de Cuba. Una refrescante bebida que te hará creer que estás en unas vacaciones...</p>
-                        <p class="card-text--mobile">El famoso Daiquiri es sinónimo de playas...</p>
-                    </div>
+                <div class="nav-items">
+                    <p class="title-nav">Cuenta</p>
+                    <p>Iniciar sesion</p>
+                    <p>Crear cuenta</p>
                 </div>
             </div>
-            <!-- card item -->
-            <div class="card-cocktail">
-                <div class="img-container">
-                    <img src="./images/mojito.jpg" alt="foto coctel mojito">
-                </div>
-                <div class="text-container">
-                    <div class="name-and-ratio-container">
-                        <p class="card-name">Mojito</p>
-                        <div class="card-valoration">
-                            <img src="./images/five-star-icon.png" alt="valoracion 5 estrellas">
-                        </div>
-                    </div>
-                    <div class="description-container">
-                        <p class="card-text">Con base de Ron, la excitante lima y el delicioso aroma a hierbabuena, el Mojito se ha ganado su sitio como uno de los cócteles más consumidos del planeta.</p>
-                        <p class="card-text--mobile">Con base de Ron, la excitante lima y el...</p>
-                    </div>
-                </div>
-            </div>
-            <!-- card item -->
-            <div class="card-cocktail">
-                <div class="img-container">
-                    <img src="./images/sex-on-the-beach.jpg" alt="foto coctel sex on the beach">
-                </div>
-                <div class="text-container">
-                    <div class="name-and-ratio-container">
-                        <p class="card-name">Sexo en la Playa</p>
-                        <div class="card-valoration">
-                            <img src="./images/five-star-icon.png" alt="valoracion 5 estrellas">
-                        </div>
-                    </div>
-                    <div class="description-container">
-                        <p class="card-text">El cóctel Sexo en la Playa o Sex on the Beach, es una bebida con base de vodka, licor de melocotón, zumo de naranja y zumo de arándanos. Una mezcla refrescante...</p>
-                        <p class="card-text--mobile">Es una bebida con base de vodka...</p>
-                    </div>
-                </div>
-            </div>
-            <!-- card item -->
-            <div class="card-cocktail">
-                <div class="img-container">
-                    <img src="./images/negroni.jpg" alt="foto coctel negroni">
-                </div>
-                <div class="text-container">
-                    <div class="name-and-ratio-container">
-                        <p class="card-name">Negroni</p>
-                        <div class="card-valoration">
-                            <img src="./images/five-star-icon.png" alt="valoracion 5 estrellas">
-                        </div>
-                    </div>
-                    <div class="description-container">
-                        <p class="card-text">Uno de los cócteles más famosos del mundo. Descubierto por el Conde Negroni en 1919. De color brillante con su atrevido tono rojo rubí.</p>
-                        <p class="card-text--mobile">Uno de los cócteles más famosos del mundo...</p>
-                    </div>
-                </div>
-            </div>
-            <!-- card item -->
-            <div class="card-cocktail">
-                <div class="img-container">
-                    <img src="./images/bloody-mary.jpg" alt="foto coctel bloody-mary">
-                </div>
-                <div class="text-container">
-                    <div class="name-and-ratio-container">
-                        <p class="card-name">Bloody Mary</p>
-                        <div class="card-valoration">
-                            <img src="./images/five-star-icon.png" alt="valoracion 5 estrellas">
-                        </div>
-                    </div>
-                    <div class="description-container">
-                        <p class="card-text">Este explosivo cóctel de color rojo tiene un sabor tan delicioso como intenso. Anímate a probar un clásico de tomate, el Bloody Mary.</p>
-                        <p class="card-text--mobile">Este explosivo cóctel de color rojo...</p>
-                    </div>
-                </div>
-            </div>
-            <!-- card item -->
-            <div class="card-cocktail">
-                <div class="img-container">
-                    <img src="./images/dry-martini.jpg" alt="foto coctel dry-martini">
-                </div>
-                <div class="text-container">
-                    <div class="name-and-ratio-container">
-                        <p class="card-name">Dry Martini</p>
-                        <div class="card-valoration">
-                            <img src="./images/five-star-icon.png" alt="valoracion 5 estrellas">
-                        </div>
-                    </div>
-                    <div class="description-container">
-                        <p class="card-text">Dry Martini es uno de los cócteles más conocidos del planeta. Compuesto de ginebra y vermut seco, y adornado con una aceituna. Bebida fácil de preparar con un...</p>
-                        <p class="card-text--mobile">Dry Martini es uno de los cócteles más...</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-    <footer class="grid-footer">
-        <!-- top -->
-        <!-- text -->
-        <div class="top-footer-text">
-            <h4>¿Queres convertirte en un experto coctelero?</h4>
-            <p class="parrafos">Recibe en tu correo las mejores recetas, trucos, consejos y mucho más, al suscribirte a nuestro News.</p>
-        </div>
-        <!-- form -->
-        <div class="top-footer-form">
-            <form class="form" action="suscribeNewslatter">
-                <input placeholder="Correo electronico" type="email" id="mail" name="user_mail" class="input">
-                <button class="button" type="submit">Suscribirme</button>
-            </form>
-        </div>
-        <!-- mid -->
-        <div class="mid-footer-marca">
-            <!-- logo -->
-            <div class="logo-container">
-                <a href="./index.html">
-                    <img src="./images/logo-horizontal.png" alt="logo horizontal">
-                </a>
-            </div>
-            <!-- redes -->
-            <div class="mid-footer-redes">
-                <p class="redes-comment">Seguinos en nuestras redes</p>
-                <div class="icons-redes">
+            <!-- bottom -->
+            <div class="bottom-footer">
+                <div class="footer-copyright">
+                    <p>Copyright</p>
                     <div class="icon-container">
-                        <a href="https://www.facebook.com/" target="_blank" rel="noopener noreferrer">
-                            <img src="./images/icons-redes/icons8-facebook-nuevo-50.png" alt="red social facebook">
-                        </a>
+                        <img
+                            src="./images/copyright-icon.png"
+                            alt="icono de copyright"
+                            class="icon-copyright"
+                        />
                     </div>
-                    <div class="icon-container">
-                        <a href="https://www.instagram.com/?hl=es" target="_blank" rel="noopener noreferrer">
-                            <img src="./images/icons-redes/icons8-instagram-50.png" alt="red social instagram">
-                        </a>
-                    </div>
-                    <div class="icon-container">
-                        <a href="https://twitter.com/home" target="_blank" rel="noopener noreferrer">
-                            <img src="./images/icons-redes/icons8-twitter-50.png" alt="red social twitter">
-                        </a>
-                    </div>
-                    <div class="icon-container">
-                        <a href="https://www.tiktok.com/es/" target="_blank" rel="noopener noreferrer">
-                            <img src="./images/icons-redes/tik-tok.png" alt="red social tik tok">
-                        </a>
-                    </div>
-                    <div class="icon-container">
-                        <a href="https://www.linkedin.com/feed/" target="_blank" rel="noopener noreferrer">
-                            <img src="./images/icons-redes/linkedin.png" alt="red social linkedIn">
-                        </a>
-                    </div>
+                    <p>2023 Cocktails at Home. Todos los derechos reservados</p>
+                </div>
+                <div class="footer-copyright">
+                    <p>Politica de privacidad</p>
+                    <p>|</p>
+                    <p>Aviso Legal</p>
+                    <p>|</p>
+                    <p>Mapa de sitio</p>
                 </div>
             </div>
-        </div>
-        <!-- nav footer -->
-        <div class="mid-footer-nav">
-            <div class="nav-items">
-                <a href="#descubrir">
-                    <p class="title-nav">Descubrir</p>
-                </a>
-                <p>Colecciones</p>
-                <p>Recetas semanales</p>
-                <p>Juegos para tomar</p>
-            </div>
-            <div class="nav-items">
-                <p class="title-nav">Bebidas</p>
-                <p>Cocteles</p>
-                <p>Ingredientes</p>
-            </div>
-            <div class="nav-items">
-                <p class="title-nav">Institucional</p>
-                <p>Sobre nosotros</p>
-                <p>Contactanos</p>
-            </div>
-            <div class="nav-items">
-                <p class="title-nav">Cuenta</p>
-                <p>Iniciar sesion</p>
-                <p>Crear cuenta</p>
-            </div>
-        </div>
-        <!-- bottom -->
-        <div class="bottom-footer">
-            <div class="footer-copyright">
-                <p>Copyright</p>
-                <div class="icon-container">
-                    <img src="./images/copyright-icon.png" alt="icono de copyright" class="icon-copyright">
-                </div>
-                <p>2023 Cocktails at Home. Todos los derechos reservados</p>
-            </div>
-            <div class="footer-copyright">
-                <p>Politica de privacidad</p>
-                <p>|</p>
-                <p>Aviso Legal</p>
-                <p>|</p>
-                <p>Mapa de sitio</p>
-            </div>
-        </div>
-    </footer>
-    <!-- link cdn bootstrap JS -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
-    <!-- link js nativo -->
-    <script src="./javascript/menu/funcionalidades.js"></script>
-    <script src="./javascript/clases/Coctel.js"></script>
-    <script src="./javascript/main.js"></script>
-</body>
+        </footer>
+        <!-- link cdn bootstrap JS -->
+        <script
+            src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+            crossorigin="anonymous"
+        ></script>
+        <!-- link js nativo -->
+        <script src="./javascript/menu/funcionalidades.js"></script>
+        <script src="./javascript/clases/Coctel.js"></script>
+        <script src="./javascript/modal-edad.js"></script>
+        <script src="./javascript/main.js"></script>
+    </body>
 </html>
