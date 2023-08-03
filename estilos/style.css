@@ -1200,4 +1200,116 @@ body p {
   color: #FAF6E7;
   box-shadow: 1px 1px 7px -1px rgba(17, 17, 17, 0.7411764706);
   margin-bottom: 5px;
+}
+
+body {
+  margin: 0;
+}
+
+.mainSign {
+  width: 100%;
+  height: 100vh;
+  background-image: url("../images/image-main-content.jpg");
+  background-repeat: no-repeat;
+}
+.mainSign .linearGradient {
+  width: 100%;
+  height: 100vh;
+  background: linear-gradient(90deg, rgba(255, 255, 255, 0.75) 45%, transparent);
+}
+.mainSign .linearGradient .flexMain {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  width: 50%;
+  align-items: center;
+  justify-content: center;
+  gap: 1em;
+}
+.mainSign .linearGradient .flexMain img {
+  width: auto;
+  height: 4em;
+  margin-bottom: 1em;
+}
+.mainSign .linearGradient .flexMain .googleDiv {
+  width: 45%;
+  border: 1px solid #3A4004;
+  height: 2.5rem;
+  margin-right: 2px;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  border-radius: 4px;
+}
+.mainSign .linearGradient .flexMain .googleDiv .google-logo {
+  width: 24px;
+  height: 24px;
+  margin-right: 16px;
+  margin-bottom: 0;
+}
+.mainSign .linearGradient .flexMain .googleDiv .google-logo .google-text {
+  font-size: 14px;
+  font-weight: 600;
+  color: #3A4004;
+}
+.mainSign .linearGradient .flexMain .divider {
+  width: 45%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.mainSign .linearGradient .flexMain .divider .divider-left {
+  margin-right: 1rem;
+}
+.mainSign .linearGradient .flexMain .divider .divider-center {
+  color: #3A4004;
+  font-size: 16px;
+}
+.mainSign .linearGradient .flexMain .divider .divider-right {
+  margin-left: 1rem;
+}
+.mainSign .linearGradient .flexMain .formSign {
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+  align-items: center;
+  gap: 1em;
+}
+.mainSign .linearGradient .flexMain .formSign .groupForm {
+  width: 45%;
+  display: flex;
+  flex-direction: column;
+  gap: 0.25em;
+}
+.mainSign .linearGradient .flexMain .formSign .groupForm input {
+  width: 100%;
+  height: 2.8em;
+  border-radius: 5px;
+  border: 0.25px solid #3A4004;
+  background-color: rgba(255, 255, 255, 0.7);
+}
+.mainSign .linearGradient .flexMain .formSign button {
+  width: 45%;
+  padding: 0.75em 1em;
+  background-color: #FAF6E7;
+  border-radius: 5px;
+  border: none;
+  background-color: #3A4004;
+  color: #FAF6E7;
+  margin-bottom: 5px;
+  font-size: 15px;
+  font-weight: 600;
+}
+.mainSign .linearGradient .flexMain .tyc {
+  display: flex;
+  flex-direction: column;
+  width: 65%;
+  text-align: center;
+  gap: 1em;
+}
+
+.divider-left,
+.divider-right {
+  width: 100%;
+  border-bottom: 0.5px solid #3A4004;
 }/*# sourceMappingURL=style.css.map */
