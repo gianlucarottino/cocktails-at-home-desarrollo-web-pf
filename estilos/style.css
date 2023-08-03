@@ -1150,7 +1150,7 @@ body p {
     width: 100%;
   }
 }
-.modal-edad {
+.modales {
   position: fixed;
   top: 0;
   left: 0;
@@ -1160,7 +1160,7 @@ body p {
   display: flex;
   visibility: hidden;
 }
-.modal-edad .modal-contenido {
+.modales .modal-contenido {
   width: 90%;
   display: flex;
   max-width: 550px;
@@ -1174,28 +1174,28 @@ body p {
   align-items: center;
   text-align: center;
 }
-.modal-edad .modal-contenido img {
+.modales .modal-contenido img {
   width: 13em;
 }
-.modal-edad .modal-contenido .modal-title {
+.modales .modal-contenido .modal-title {
   font-size: xx-large;
   font-weight: 700;
   color: #3A4004;
   margin-bottom: 5px;
 }
-.modal-edad .modal-contenido p {
+.modales .modal-contenido p {
   font-size: medium;
 }
-.modal-edad .modal-contenido .modal-botones {
+.modales .modal-contenido .modal-botones {
   display: flex;
   flex-direction: column;
 }
-.modal-edad .modal-contenido .modal-botones .btn {
+.modales .modal-contenido .modal-botones .btn {
   padding: 0.75em 1em;
   background-color: #FAF6E7;
   border-radius: 1em;
 }
-.modal-edad .modal-contenido .modal-botones .prim {
+.modales .modal-contenido .modal-botones .prim {
   background-color: #3A4004;
   color: #FAF6E7;
   box-shadow: 1px 1px 7px -1px rgba(17, 17, 17, 0.7411764706);

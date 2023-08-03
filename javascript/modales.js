@@ -6,7 +6,6 @@ document.addEventListener("DOMContentLoaded", () => {
 
     let yesBtn = document.getElementById("yesBtn");
     yesBtn.addEventListener("click", () => {
-        // modal.style.visibility = "hidden";
         onBoarding();
     });
 
@@ -16,13 +15,8 @@ document.addEventListener("DOMContentLoaded", () => {
     });
 });
 
-function nuevoModal(
-    url_img,
-    text_titulo,
-    text_parrafo,
-    button_text,
-    button_id
-) {
+function nuevoModal(url_img, text_titulo, text_parrafo, button_text,button_id) {
+    
     let modal_contenido = document.getElementById("modalCtn");
     modal_contenido.innerHTML = "";
 
@@ -64,9 +58,9 @@ function onBoarding() {
 
     nuevoModal(url_img, text_titulo, text_parrafo, button_text, button_id);
 
-		button = document.getElementById("loginBtn");
+    button = document.getElementById("loginBtn");
     button.addEventListener("click", () => {
-				window.location.href = "./pages/signup.html";
+        window.location.href = "./pages/signup.html";
     });
 }
 
@@ -85,3 +79,78 @@ function sinPermiso() {
         window.close();
     });
 }
+
+let button_signup = document.querySelector("#signUpBtn");
+button_signup.addEventListener("click", () => {
+    window.location.href = "../index.html";
+});
+
+let button_google = document.querySelector("#googleBtn")
+button_google.addEventListener("click", () => {
+
+    inProgress();
+
+})
+
+function inProgress() {
+
+    body = document.body
+    let url_img = "../images/feeling-sorry-cuate.png"
+    let text_titulo = "Funcionalidad proximamente disponible";
+    let text_parrafo =
+    "Estamos trabajando arduamente para mejorar tu experiencia. Muy pronto, podrás disfrutar de esta funcionalidad que revolucionará tu experiencia con nosotros.";
+    let button_text = "Cerrar";
+    let button_id = "inProgBtn";
+    
+    let modal = document.createElement("div");
+    modal.classList = "modales";
+    body.appendChild(modal);
+    modal.style.visibility = "visible"
+
+    let modal_contenido = document.createElement("div");
+    modal_contenido.classList = "modal-contenido";
+    modal.appendChild(modal_contenido);
+
+    let modal_texto = document.createElement("div");
+    modal_texto.classList = "modal-texto";
+    modal_contenido.appendChild(modal_texto);
+
+    let modal_botones = document.createElement("div");
+    modal_botones.classList = "modal-botones";
+    modal_contenido.appendChild(modal_botones);
+
+    let ilustracion = document.createElement("img");
+    ilustracion.src = url_img;
+    modal_texto.appendChild(ilustracion);
+
+    let titulo = document.createElement("h2");
+    titulo.classList = "modal-title";
+    titulo.textContent = text_titulo;
+    modal_texto.appendChild(titulo);
+
+    let parrafo = document.createElement("p");
+    parrafo.textContent = text_parrafo;
+    modal_texto.appendChild(parrafo);
+
+    let button = document.createElement("button");
+    button.classList = "btn prim";
+    button.textContent = button_text;
+    button.id = button_id;
+    modal_botones.appendChild(button);
+
+    button = document.getElementById("inProgBtn");
+    button.addEventListener("click", () => {
+
+        cerrarModal();
+
+    })
+}
+
+function cerrarModal() {
+
+    let modal = document.querySelector(".modales");
+    modal.style.visibility = "hidden";
+
+}
+
+
