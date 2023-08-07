@@ -37,29 +37,35 @@
                     <div class="formSign">
                         <div class="groupForm">
                             <h4>Nombre</h4>
-                            <input type="text" />
+                            <input type="text" id="nombre"/>
+                            <div id="error_nombre" class="avisoError"></div>
                         </div>
                         <div class="groupForm">
                             <h4>Apellido</h4>
-                            <input type="text" />
+                            <input type="text" id="apellido"/>
+                            <div id="error_apellido" class="avisoError"></div>
                         </div>
                         <div class="groupForm">
                             <h4>Edad</h4>
-                            <input type="text" />
+                            <input type="number" id="edad"/>
+                            <div id="error_edad" class="avisoError"></div>
                         </div>
                         <div class="groupForm">
-                            <h4>Correo electronico</h4>
-                            <input type="text" />
+                            <h4>Usuario</h4>
+                            <input type="text" id="usuario"/>
+                            <div id="error_usuario" class="avisoError"></div>
                         </div>
                         <div class="groupForm">
                             <h4>Contraseña</h4>
-                            <input type="text" />
+                            <input type="password" id="contraseña"/>
+                            <div id="error_contraseña" class="avisoError"></div>
                         </div>
                         <div class="groupForm">
                             <h4>Repetir Contraseña</h4>
-                            <input type="text" />
+                            <input type="password" id="repeatPass"/>
+                            <div id="error_repeatPass" class="avisoError"></div>
                         </div>
-                        <button id="signUpBtn">Crear cuenta</button>
+                        <button type="submit" id="signUpBtn">Crear cuenta</button>
                     </div>
                     <div class="tyc">
                         <p><strong>Necesito ayuda</strong></p>
@@ -73,6 +79,7 @@
             </div>
         </main>
         <!-- link js nativo -->
+        <script src="../javascript/clases/Usuario.js"></script>
         <script src="../javascript/modales.js"></script>
         <script src="../javascript/main.js"></script>
     </body>

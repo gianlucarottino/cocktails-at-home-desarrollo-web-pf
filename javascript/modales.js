@@ -1,12 +1,20 @@
 document.addEventListener("DOMContentLoaded", () => {
-    let modal = document.getElementById("modal");
-    setTimeout(() => {
-        modal.style.visibility = "visible";
-    }, 1000);
+    // Verificar si ya se respondió "sí" anteriormente
+    const respondedYes = sessionStorage.getItem("respondedYes");
+
+    if (!respondedYes || respondedYes !== "true") {
+        let modal = document.getElementById("modal");
+        setTimeout(() => {
+            modal.style.visibility = "visible";
+        }, 1000);
+    }
 
     let yesBtn = document.getElementById("yesBtn");
     yesBtn.addEventListener("click", () => {
         onBoarding();
+
+        // Almacenar en sessionStorage que se respondió "sí"
+        sessionStorage.setItem("respondedYes", "true");
     });
 
     let noBtn = document.getElementById("noBtn");
@@ -79,11 +87,6 @@ function sinPermiso() {
         window.close();
     });
 }
-
-let button_signup = document.querySelector("#signUpBtn");
-button_signup.addEventListener("click", () => {
-    window.location.href = "../index.html";
-});
 
 let button_google = document.querySelector("#googleBtn")
 button_google.addEventListener("click", () => {
