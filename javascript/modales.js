@@ -6,14 +6,14 @@ document.addEventListener("DOMContentLoaded", () => {
         let modal = document.getElementById("modal");
         setTimeout(() => {
             modal.style.visibility = "visible";
-        }, 1000);
+        }, 2000);
     }
 
     let yesBtn = document.getElementById("yesBtn");
     yesBtn.addEventListener("click", () => {
         onBoarding();
 
-        // Almacenar en sessionStorage que se respondió "sí"
+        // Guardar en sessionStorage que se respondió "sí"
         sessionStorage.setItem("respondedYes", "true");
     });
 
@@ -23,7 +23,7 @@ document.addEventListener("DOMContentLoaded", () => {
     });
 });
 
-function nuevoModal(url_img, text_titulo, text_parrafo, button_text,button_id) {
+function nuevoModal(url_img, text_titulo, text_parrafo, button_text, button_id) {
     
     let modal_contenido = document.getElementById("modalCtn");
     modal_contenido.innerHTML = "";

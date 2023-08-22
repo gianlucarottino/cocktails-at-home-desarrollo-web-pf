@@ -313,22 +313,7 @@ background-image: url("../images/bloody-mary.jpg");
         @media screen and (min-width:1024px) {
             .card-cocktail {
                 height: 23em;
-                transition: all 0.5s ease-out;
-
-                .description-container {
-                    display: none;
-                }
-            }
-
-            .card-cocktail:hover {
-                height: max-content;
-                box-shadow: -1px -1px 11px rgba(26, 26, 26, 0.4);
-            
-                .description-container {
-                    display: block;
-                }
-            }            
-            
+            }         
         }
 
 // MEDIA QUERIES //
