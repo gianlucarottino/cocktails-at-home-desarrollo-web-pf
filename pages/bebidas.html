@@ -86,7 +86,7 @@
                 </div>
             </div>
             <!-- filtros + cards -->
-            <div class="content-bebidas">
+            <div class="content-bebidas" id="contentBebidas">
                 <aside class="aside">
                     <h3 class="section-title--3">Filtrar por</h3>
                     <!-- dropdowns -->
@@ -144,8 +144,12 @@
                     </div>
                 </aside>
                 <!-- cards container -->
-                <div class="cards-container--b" id="divBebidas">
-                    <!-- card item -->
+                <div>
+                    <div id="existencia" class="existencia">
+                        <i class="fa-solid fa-circle-info"></i>
+                        <p id="mensajeExistencia"></p>
+                    </div>
+                    <div class="cards-container--b" id="divBebidas"></div>
                 </div>
             </div>
         </section>

@@ -1,4 +1,5 @@
 class GestionarCocteles {
+
     solicitarData() {
         // Ruta relativa a la base de datos creada manualmente
         const api_url_inicio = "./javascript/db.json";
@@ -10,24 +11,27 @@ class GestionarCocteles {
             .then((data) => {
                 let cocteles = data.cocteles
                 cocteles.forEach((coctel) => {
-                    this.cargarCoctelesHome(coctel);
-                });
+                    this.cargarCoctelesHome(coctel)
+                })
             })
             .catch((error) => {
                 console.error("Error: ", error);
-            });
+            })
         
         fetch(api_url_bebidas)
             .then((response) => response.json())
             .then((data) => {
+                
                 let cocteles = data.cocteles
+                coctelesBebidas = [];
                 cocteles.forEach((coctel) => {
                     this.cargarCoctelesBebidas(coctel);
-                });
+                    coctelesBebidas.push(coctel);
+                })
             })
             .catch((error) => {
                 console.error("Error: ", error);
-            });
+            })
     }
 
     cargarCoctelesHome(coctel) {
@@ -81,4 +85,51 @@ class GestionarCocteles {
 
         divBebidas.appendChild(cardBebidas);
     }
+
+    mostrarExistencia(mensaje) {
+
+        let existencia = document.getElementById("mensajeExistencia");
+        existencia.textContent = mensaje
+
+    }
+
+    buscarCocteles(valor) {
+
+        const divBebidas = document.getElementById("divBebidas");
+        divBebidas.innerHTML = "";
+        
+
+        if (coctelesBebidas.length > 0) {
+
+            const resultado = coctelesBebidas.filter(coctel => 
+                coctel.name.toLowerCase().includes(valor.toLowerCase()) || 
+                coctel.description.toLowerCase().includes(valor.toLowerCase()));
+    
+    
+            if (resultado.length > 0 ) {
+    
+                this.mostrarExistencia("Se encontraron los siguientes resultados: ");
+                resultado.forEach((result) => {
+
+                    this.cargarCoctelesBebidas(result)
+                    console.log(result);
+                    
+                })
+
+            } else {
+    
+                this.mostrarExistencia("No se encontraron resultados");
+    
+            }
+
+            let busqueda = document.getElementById("searchBar").value;
+
+            if (!busqueda) {
+
+                
+
+            }
+        }
+    }
 }
+

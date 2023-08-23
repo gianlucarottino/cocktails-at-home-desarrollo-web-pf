@@ -47,12 +47,12 @@
     // filtros //
 
     .aside {
-        width: 100%;
         padding: 2em;
-        border-right: 3px solid #3A4004;
-        background-color: rgba(0,0,0,.125);
+        border-right: 3px solid $colorprimario;
+        background-color: rgba(0, 0, 0, 0.125);
         border-radius: 11px;
-        height: min-content;
+        flex-direction: column;
+    
 
         .section-title--3 {
             font-size: 1.3em;
@@ -63,7 +63,6 @@
         // dropdowns //
 
         .dropdown-buttons {
-            width: 4.9em;
             display: flex;
             flex-direction: column;
             gap: 0.5em;
@@ -88,6 +87,27 @@
         gap: 1em;
         flex-wrap: wrap;
     }
+}
+
+.existencia {
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 4em;
+    width: fit-content;
+    padding: 1.5em;
+    background-color: #dbd7ca;
+    margin-bottom: 1em;
+    border-radius: 11px;
+    border-left: solid 3px #3a4004;
+
+    i {
+
+        color: $colorprimario;
+        margin-right: 0.5em;
+    }
+
 }
 
 // MEDIA QUERIES //
