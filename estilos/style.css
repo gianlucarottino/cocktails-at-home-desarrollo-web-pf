@@ -24,6 +24,7 @@ body p {
 }
 .header-desktop .nav-native {
   background-color: #FAF6E7;
+  padding-top: 1.5rem;
 }
 .header-desktop .nav-native .container-fluid {
   justify-content: space-around !important;
@@ -107,8 +108,7 @@ body p {
   box-shadow: 2px 3px 15px rgba(0, 0, 0, 0.2117647059);
 }
 .card-cocktail .img-container {
-  width: 23.44em;
-  height: auto;
+  width: 24em;
   overflow: hidden;
   -o-object-fit: cover;
      object-fit: cover;
@@ -257,6 +257,10 @@ body p {
   background-image: url("../images/dry-martini.jpg");
 }
 
+.placeholder {
+  background-image: url("../images/placeholder.jpg");
+}
+
 .card-plan {
   width: 23em;
   height: 22em;
@@ -360,11 +364,11 @@ body p {
     display: none;
   }
 }
-@media screen and (min-width: 1024px) {
-  .card-cocktail {
-    height: 23em;
-  }
-}
+/*         @media screen and (min-width:1024px) {
+            .card-cocktail {
+                height: 23em;
+            }         
+        } */
 @media screen and (min-width: 320px) and (max-width: 768px) {
   .card-plan {
     padding: 1.25em;

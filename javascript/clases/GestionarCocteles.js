@@ -82,6 +82,7 @@ class GestionarCocteles {
                                     </div>
                                 </div>
                                 `
+        cardBebidas.classList.add("creadoByDOM")
 
         divBebidas.appendChild(cardBebidas);
     }
@@ -126,8 +127,8 @@ class GestionarCocteles {
 
             if (!busqueda) {
 
-                
-
+                let itemsEliminar = document.querySelectorAll(".creadoByDOM")
+                itemsEliminar.remove();
             }
         }
     }

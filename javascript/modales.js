@@ -154,6 +154,8 @@ function cerrarModal() {
     let modal = document.querySelector(".modales");
     modal.style.visibility = "hidden";
 
+    modal.remove();
+
 }
 
 

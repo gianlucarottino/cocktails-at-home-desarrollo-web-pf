@@ -11,8 +11,7 @@
     box-shadow: map-get($map: $estilos, $key: shadow-card);
 
     .img-container {
-        width: 23.44em;
-        height: auto;
+        width: 24em;
         overflow: hidden;
         object-fit: cover;
         border-radius: 10px;
@@ -176,6 +175,10 @@ background-image: url("../images/bloody-mary.jpg");
     background-image: url("../images/dry-martini.jpg");
 }
 
+.placeholder {
+    background-image: url("../images/placeholder.jpg");
+}
+
 // card planes //
 
 .card-plan {
@@ -310,11 +313,11 @@ background-image: url("../images/bloody-mary.jpg");
             }
         }
 
-        @media screen and (min-width:1024px) {
+/*         @media screen and (min-width:1024px) {
             .card-cocktail {
                 height: 23em;
             }         
-        }
+        } */
 
 // MEDIA QUERIES //
 

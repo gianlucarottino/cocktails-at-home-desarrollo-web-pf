@@ -38,6 +38,20 @@ function validarFormulario() {
 
 
         console.log(array_mensajes);
+
+        Toastify({
+
+            text: "¡No pudimos crear tu cuenta! Revisá los mensajes de error descriptos debajo de cada campo",
+            duration: 2000,
+            gravity: "bottom",
+            style: {
+                background: "#b81414",
+                padding: "1.25em",
+                borderRadius: "11px",
+            }
+            
+            }).showToast();
+
         return false; 
     }
 
@@ -64,7 +78,6 @@ function mostrarError(inputId, mensaje) {
 
 function crearCuenta() {
     
-    console.log("Usuario creado con exito");
     let input_nombre = document.getElementById("nombre").value;
     let input_apellido = document.getElementById("apellido").value;
     let input_edad = document.getElementById("edad").value;
@@ -79,8 +92,24 @@ function crearCuenta() {
 
     guardarUsuariosLS(usuarios_guardados);
 
+    Toastify({
 
-    window.location.href = "../index.html";
+        text: "Cuenta creada con éxito",
+        duration: 2000,
+        gravity: "bottom",
+        style: {
+            background: "#28a745",
+            padding: "1.25em",
+            borderRadius: "11px",
+        }
+        
+        }).showToast();
+
+    setTimeout(() => {
+        window.location.href = "../index.html";
+    }, 2000);
+
+    
 }
 
 function resetForm(){

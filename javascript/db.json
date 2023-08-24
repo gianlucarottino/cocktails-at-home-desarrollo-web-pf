@@ -50,75 +50,81 @@
     },
     {
       "name": "Margarita",
-      "image": "margarita.jpg",
+      "image": "placeholder.jpg",
       "description": "La Margarita es un cóctel a base de tequila, triple sec y jugo de limón, servido en un vaso escarchado con sal. Es uno de los cócteles más populares y refrescantes.",
-      "classBg": "margarita"
+      "classBg": "placeholder"
     },
     {
       "name": "Piña Colada",
-      "image": "pina-colada.jpg",
+      "image": "placeholder.jpg",
       "description": "La Piña Colada es una bebida tropical a base de ron, crema de coco y jugo de piña, ideal para disfrutar en la playa o en momentos de relajación.",
-      "classBg": "pina-colada"
+      "classBg": "placeholder"
     },
     {
       "name": "Cosmopolitan",
-      "image": "cosmopolitan.jpg",
+      "image": "placeholder.jpg",
       "description": "El Cosmopolitan es un cóctel elegante y sofisticado, hecho con vodka, licor de naranja, jugo de arándanos y jugo de lima. Popularizado por la serie 'Sex and the City'.",
-      "classBg": "cosmopolitan"
+      "classBg": "placeholder"
     },
     {
       "name": "Tom Collins",
-      "image": "tom-collins.jpg",
+      "image": "placeholder.jpg",
       "description": "El Tom Collins es una bebida refrescante a base de ginebra, jugo de limón, jarabe de azúcar y soda. Perfecto para los días calurosos de verano.",
-      "classBg": "tom-collins"
+      "classBg": "placeholder"
     },
     {
       "name": "Cuba Libre",
-      "image": "cuba-libre.jpg",
+      "image": "placeholder.jpg",
       "description": "El Cuba Libre es un cóctel simple y clásico que combina ron y cola, generalmente decorado con una rodaja de limón. Es una bebida popular en todo el mundo.",
-      "classBg": "cuba-libre"
+      "classBg": "placeholder"
     },
     {
       "name": "Sidecar",
-      "image": "sidecar.jpg",
+      "image": "placeholder.jpg",
       "description": "El Sidecar es un cóctel clásico a base de brandy, triple sec y jugo de limón. Su origen se remonta a la década de 1920 en París.",
-      "classBg": "sidecar"
+      "classBg": "placeholder"
     },
     {
       "name": "Martini",
-      "image": "martini.jpg",
+      "image": "placeholder.jpg",
       "description": "El Martini es un icónico cóctel hecho a base de ginebra y vermut, generalmente adornado con una aceituna o una cáscara de limón. Es un símbolo de elegancia.",
-      "classBg": "martini"
+      "classBg": "placeholder"
     },
     {
       "name": "Mai Tai",
-      "image": "mai-tai.jpg",
+      "image": "placeholder.jpg",
       "description": "El Mai Tai es un cóctel tropical que combina ron, curaçao de naranja, sirope de almendra y jugo de lima. Originario de la Polinesia, es un deleite exótico.",
-      "classBg": "mai-tai"
+      "classBg": "placeholder"
     },
     {
       "name": "White Russian",
-      "image": "white-russian.jpg",
+      "image": "placeholder.jpg",
       "description": "El White Russian es un cóctel cremoso que mezcla vodka, licor de café y crema. Su sabor suave y dulce lo hace perfecto como postre líquido.",
-      "classBg": "white-russian"
+      "classBg": "placeholder"
     },
     {
       "name": "Aviation",
-      "image": "aviation.jpg",
+      "image": "placeholder.jpg",
       "description": "El Aviation es un cóctel clásico a base de ginebra, licor de violeta y jugo de limón. Su color claro y sabor floral lo convierten en una elección única.",
-      "classBg": "aviation"
+      "classBg": "placeholder"
     },
     {
       "name": "Grasshopper",
-      "image": "grasshopper.jpg",
+      "image": "placeholder.jpg",
       "description": "El Grasshopper es un cóctel dulce y refrescante que combina menta, crema de cacao y crema. Su color verde brillante lo hace inconfundible.",
-      "classBg": "grasshopper"
+      "classBg": "placeholder"
     },
     {
       "name": "Alexander",
-      "image": "alexander.jpg",
+      "image": "placeholder.jpg",
       "description": "El Alexander es un cóctel elegante hecho con coñac, crema de cacao y crema. Su sabor suave y textura cremosa lo hacen perfecto para ocasiones especiales.",
-      "classBg": "alexander"
+      "classBg": "placeholder"
+    },
+    {
+      "name": "Alexandria",
+      "image": "placeholder.jpg",
+      "description": "El Alexander es un cóctel elegante hecho con coñac, crema de cacao y crema. Su sabor suave y textura cremosa lo hacen perfecto para ocasiones especiales.",
+      "classBg": "placeholder"
     }
   ]
 }
