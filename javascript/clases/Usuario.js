@@ -1,3 +1,4 @@
+// Clase para crear objetos de tipo usuario a traves de los parametros ingresados
 class Usuario {
 
     constructor (usuario, contraseña, nombre, apellido, edad){

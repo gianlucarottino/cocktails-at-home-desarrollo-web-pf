@@ -1,11 +1,14 @@
+// Clase para gestionar los cocteles de toda la página
 class GestionarCocteles {
-
+    
+    // Metodo para solicitar datos a la base de datos 
     solicitarData() {
-        // Ruta relativa a la base de datos creada manualmente
+        // Ruta relativa a la base de datos creada manualmente desde index.html
         const api_url_inicio = "./javascript/db.json";
+        // Ruta relativa a la base de datos creada manualmente desde bebidas.html
         const api_url_bebidas = "../javascript/db.json";
 
-        // Peticion a la base de datos
+        // Peticion a la base de datos para los cocteles de la pagina inicio
         fetch(api_url_inicio)
             .then((response) => response.json())
             .then((data) => {
@@ -18,6 +21,7 @@ class GestionarCocteles {
                 console.error("Error: ", error);
             })
         
+        // peticion para los cocteles de la seccion de bebidas
         fetch(api_url_bebidas)
             .then((response) => response.json())
             .then((data) => {
@@ -34,6 +38,7 @@ class GestionarCocteles {
             })
     }
 
+    // Metodo para cargar los cocteles en Inicio
     cargarCoctelesHome(coctel) {
         const divCocteles = document.getElementById("divCocteles");
 
@@ -60,6 +65,7 @@ class GestionarCocteles {
         divCocteles.appendChild(cardCocktail);
     }
 
+    // Metodo para cargar los cocteles en Bebidas
     cargarCoctelesBebidas(coctel) {
         
         const divBebidas = document.getElementById("divBebidas");
@@ -87,6 +93,7 @@ class GestionarCocteles {
         divBebidas.appendChild(cardBebidas);
     }
 
+    // Metodo para proporcionar feedback al usuario
     mostrarExistencia(mensaje) {
 
         let existencia = document.getElementById("mensajeExistencia");
@@ -94,6 +101,7 @@ class GestionarCocteles {
 
     }
 
+    // Metodo para agregar la funcionalidad de busqueda
     buscarCocteles(valor) {
 
         const divBebidas = document.getElementById("divBebidas");
@@ -122,15 +130,6 @@ class GestionarCocteles {
                 this.mostrarExistencia("No se encontraron resultados");
     
             }
-
-            let busqueda = document.getElementById("searchBar").value;
-
-            if (!busqueda) {
-
-                let itemsEliminar = document.querySelectorAll(".creadoByDOM")
-                itemsEliminar.remove();
-            }
         }
     }
 }
-

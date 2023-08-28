@@ -1,7 +1,10 @@
+// Intro a la web, verifico si es la primera vez que ingresa con session Storage
 document.addEventListener("DOMContentLoaded", () => {
-    // Verificar si ya se respondió "sí" anteriormente
+    
+    // Verifico si ya se respondió "sí" anteriormente
     const respondedYes = sessionStorage.getItem("respondedYes");
-
+    
+    // Si es la primera vez que ingresa, habilito modal de edad
     if (!respondedYes || respondedYes !== "true") {
         let modal = document.getElementById("modal");
         setTimeout(() => {
@@ -9,20 +12,23 @@ document.addEventListener("DOMContentLoaded", () => {
         }, 2000);
     }
 
+    // Si selecciona que es mayor de edad, permito onboarding
     let yesBtn = document.getElementById("yesBtn");
     yesBtn.addEventListener("click", () => {
         onBoarding();
 
-        // Guardar en sessionStorage que se respondió "sí"
+        // Guardo en sessionStorage que respondió sí
         sessionStorage.setItem("respondedYes", "true");
     });
 
+    // Si no es mayor de edad, muestro modal de sin permiso
     let noBtn = document.getElementById("noBtn");
     noBtn.addEventListener("click", () => {
         sinPermiso();
     });
 });
 
+// Funcion para crear modales
 function nuevoModal(url_img, text_titulo, text_parrafo, button_text, button_id) {
     
     let modal_contenido = document.getElementById("modalCtn");
@@ -56,6 +62,7 @@ function nuevoModal(url_img, text_titulo, text_parrafo, button_text, button_id) 
     div_modal_btn.appendChild(button);
 }
 
+// Funcion para onboarding a nuevos usuarios
 function onBoarding() {
     let url_img = "./images/done-pana.png";
     let text_titulo = "¡Que bueno conocerte!";
@@ -72,6 +79,7 @@ function onBoarding() {
     });
 }
 
+// Funcion para restringir acceso a la web
 function sinPermiso() {
     let url_img = "./images/feeling-sorry-cuate.png";
     let text_titulo = "¡Que lastima que no lo seas!";
@@ -88,6 +96,7 @@ function sinPermiso() {
     });
 }
 
+// Evento para componente de iniciar sesion con Google
 let button_google = document.querySelector("#googleBtn")
 button_google.addEventListener("click", () => {
 
@@ -95,6 +104,7 @@ button_google.addEventListener("click", () => {
 
 })
 
+// Modal para Funcionalidad proximamente disponible
 function inProgress() {
 
     body = document.body
@@ -149,6 +159,7 @@ function inProgress() {
     })
 }
 
+// Funcion para cerrar modal
 function cerrarModal() {
 
     let modal = document.querySelector(".modales");
