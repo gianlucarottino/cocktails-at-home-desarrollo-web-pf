@@ -10,17 +10,29 @@ document.addEventListener("DOMContentLoaded", () => {
     
 })
 
-document.querySelector("#searchBar").addEventListener("keyup", () => {
+// Componente input de busqueda
+const searchBar = document.querySelector("#searchBar");
 
-    let busqueda = document.getElementById("searchBar").value;
-    
+// Agrego evento de busqueda segun lo que ingresa el usuario
+searchBar.addEventListener("keyup", (event) => {
+
+    let busqueda = event.target.value;
+
     if (busqueda.length >= 3) {
 
         gestorCocteles.buscarCocteles(busqueda);
 
     } else {
 
-        gestorCocteles.mostrarExistencia("Todos los cocteles disponibles");
+        // Busco con valor en string vacío para mostrar todos los cocteles
+        gestorCocteles.buscarCocteles(""); 
 
     }
-})
+});
+
+// Agrego evento a la equis del componente, para que muestre todos los cocteles
+searchBar.addEventListener("search", () => {
+    
+    gestorCocteles.buscarCocteles("");
+
+});

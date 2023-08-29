@@ -1,6 +1,15 @@
 // Clase para gestionar los cocteles de toda la página
 class GestionarCocteles {
     
+    constructor() {
+
+        // Array de cocteles donde se va a cargar la solicitud, propio de la clase
+        this.coctelesBebidas = [];
+        // Variable timeout para poder hacer el retraso antes de la busqueda
+        this.timeoutId = null;
+
+    }
+    
     // Metodo para solicitar datos a la base de datos 
     solicitarData() {
         // Ruta relativa a la base de datos creada manualmente desde index.html
@@ -27,10 +36,9 @@ class GestionarCocteles {
             .then((data) => {
                 
                 let cocteles = data.cocteles
-                coctelesBebidas = [];
                 cocteles.forEach((coctel) => {
                     this.cargarCoctelesBebidas(coctel);
-                    coctelesBebidas.push(coctel);
+                    this.coctelesBebidas.push(coctel);
                 })
             })
             .catch((error) => {
@@ -101,35 +109,55 @@ class GestionarCocteles {
 
     }
 
-    // Metodo para agregar la funcionalidad de busqueda
+    // Metodo para agregar la funcionalidad de busqueda con retraso
     buscarCocteles(valor) {
 
-        const divBebidas = document.getElementById("divBebidas");
-        divBebidas.innerHTML = "";
-        
+        // Limpio el timeout anterior si existe
+        clearTimeout(this.timeoutId); 
 
-        if (coctelesBebidas.length > 0) {
+        // Funcion para realizar la busqueda despues de 200 ms
+        this.timeoutId = setTimeout(() => {
 
-            const resultado = coctelesBebidas.filter(coctel => 
-                coctel.name.toLowerCase().includes(valor.toLowerCase()) || 
-                coctel.description.toLowerCase().includes(valor.toLowerCase()));
-    
-    
-            if (resultado.length > 0 ) {
-    
-                this.mostrarExistencia("Se encontraron los siguientes resultados: ");
-                resultado.forEach((result) => {
+            const divBebidas = document.getElementById("divBebidas");
+            divBebidas.innerHTML = "";
 
-                    this.cargarCoctelesBebidas(result)
-                    console.log(result);
+            // Chequeo si el array de cocteles no esta vacio
+            if (this.coctelesBebidas.length > 0) {
+
+                // Si la busqueda tieen mas de 3 caracteres
+                if (valor.length >= 3) {
+
+                    // Realizo la busqueda por nombre y descripcion dentro del array
+                    const resultado = this.coctelesBebidas.filter(coctel =>
+                        coctel.name.toLowerCase().includes(valor.toLowerCase()) ||
+                        coctel.description.toLowerCase().includes(valor.toLowerCase()));
                     
-                })
+                    // Si el el array resultado, creado por la busqueda no es vacio
+                    if (resultado.length > 0) {
 
-            } else {
-    
-                this.mostrarExistencia("No se encontraron resultados");
-    
+                        // Doy feedback al usuario de que se encontro algo
+                        this.mostrarExistencia("Se encontraron los siguientes resultados: ");
+
+                        // Cargo en la interfaz los resultados encontrados
+                        resultado.forEach((result) => {
+                            this.cargarCoctelesBebidas(result);
+                        });
+
+                    } else {
+                        
+                        // De lo contrario, si el array resultado es vacio, doy feedback
+                        this.mostrarExistencia("No se encontraron resultados");
+                    }
+                } else {
+
+                    // Si el usuario no realizo la busqueda de 3 o mas caracteres
+                    this.mostrarExistencia("Todos los cocteles disponibles");
+
+                    this.coctelesBebidas.forEach((coctel) => {
+                        this.cargarCoctelesBebidas(coctel);
+                    });
+                }
             }
-        }
+        }, 200);
     }
 }
