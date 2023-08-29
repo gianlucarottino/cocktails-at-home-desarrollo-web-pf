@@ -3,10 +3,12 @@ class GestionarCocteles {
     
     constructor() {
 
-        // Array de cocteles donde se va a cargar la solicitud, propio de la clase
+        // Propiedad de array de cocteles donde se va a cargar la solicitud, propio de la clase
         this.coctelesBebidas = [];
-        // Variable timeout para poder hacer el retraso antes de la busqueda
+        // Propiedad como variable para poder hacer el retraso antes de la busqueda
         this.timeoutId = null;
+        // Propiedad para mantener el estado del orden en el filtro Ordernar
+        this.orderAscendente = true;
 
     }
     

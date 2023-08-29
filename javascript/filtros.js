@@ -1,136 +1,183 @@
 // Filtros de ordenar
 
+const divCocteles = document.getElementById("divBebidas");
 let filtroOrderName = document.getElementById("orderName");
-let orderAscendente = true
-
-filtroOrderName.addEventListener("click", () => {
-
-  orderAscendente = !orderAscendente;
-  ordenarNombre();
-
-})
-
-function ordenarNombre() {
-
-  const divCocteles = document.getElementById("divBebidas")
-  divCocteles.innerHTML = "";
-
-  coctelesBebidas.sort(function(a,b) {
-
-    let nombreA = a.name.toLowerCase();
-    let nombreB = b.name.toLowerCase();
-
-    return orderAscendente ? nombreA.localeCompare(nombreB) : nombreB.localeCompare(nombreA);
-
-  })
-  
-  coctelesBebidas.forEach(coctel => {
-
-    gestorCocteles.cargarCoctelesBebidas(coctel);
-    
-  });
-  
-}
-
 let filtroOrderStrength = document.getElementById("orderStrength");
-
-filtroOrderStrength.addEventListener("click", () => {
-
-  inProgress();
-
-})
-
 let filtroOrderDate = document.getElementById("orderDate");
 
-filtroOrderDate.addEventListener("click", () => {
-
-  inProgress();
-
+filtroOrderName.addEventListener("click", () => {
+  gestorCocteles.orderAscendente = !gestorCocteles.orderAscendente;
+  ordenarPorPropiedad("name");
 })
+
+filtroOrderStrength.addEventListener("click", () => {
+  gestorCocteles.orderAscendente = !gestorCocteles.orderAscendente;
+  ordenarPorPropiedad("strength");
+})
+
+filtroOrderDate.addEventListener("click", () => {
+  gestorCocteles.orderAscendente = !gestorCocteles.orderAscendente;
+  ordenarPorPropiedad("dateCharge");
+})
+
+function ordenarPorPropiedad(propiedad) {
+
+  divCocteles.innerHTML = "";
+
+  gestorCocteles.coctelesBebidas.sort((a, b) => {
+    let valorA = a[propiedad];
+    let valorB = b[propiedad];
+    
+    switch (typeof valorA) {
+
+      case 'string':
+
+        return gestorCocteles.orderAscendente
+          ? valorA.localeCompare(valorB)
+          : valorB.localeCompare(valorA);
+
+      case 'number':
+
+        return gestorCocteles.orderAscendente
+          ? valorA - valorB
+          : valorB - valorA;
+
+      default:
+
+        return 0;
+    }
+
+  });
+  
+  orderCarga();
+}
+
+function orderCarga() {
+
+  gestorCocteles.coctelesBebidas.forEach((coctel) => {
+
+    gestorCocteles.cargarCoctelesBebidas(coctel);
+
+  });
+}
+
+
 
 // Filtros fuerza de alcohol
 
 let filtroNoAlcohol = document.getElementById("filterNoAl");
+let filtroSuave = document.getElementById("filterSuave");
+let filtroMedio = document.getElementById("filterMedio");
+let filtroFuerte = document.getElementById("filterFuerte");
+
+function filtrarPorValor(propiedad, valor) {
+
+  divCocteles.innerHTML = "";
+  const copiaPrefiltrado = [...gestorCocteles.coctelesBebidas];
+
+  let filtrados = copiaPrefiltrado.filter(coctel => {
+
+    return coctel[propiedad] === valor;
+
+  })
+  
+  if (filtrados.length > 0) {
+
+    filtrados.forEach((coctel) => {
+  
+      gestorCocteles.cargarCoctelesBebidas(coctel);
+  
+    });
+    
+  } else {
+
+    gestorCocteles.mostrarExistencia("No se encontraron resultados");
+
+  }
+
+}
+
 
 filtroNoAlcohol.addEventListener("click", () => {
 
-  inProgress();
+  filtrarPorValor("category","sin alcohol");
 
 })
 
-let filtroSuave = document.getElementById("filterSuave");
+
 
 filtroSuave.addEventListener("click", () => {
 
-  inProgress();
+  filtrarPorValor("category","suave");
 
 })
 
-let filtroMedio = document.getElementById("filterMedio");
+
 
 filtroMedio.addEventListener("click", () => {
 
-  inProgress();
+  filtrarPorValor("category","medio");
 
 })
 
-let filtroFuerte = document.getElementById("filterFuerte");
+
 
 filtroFuerte.addEventListener("click", () => {
 
-  inProgress();
+  filtrarPorValor("category","fuerte");
 
 })
 
 // Filtros igrendientes base
 
 let ron = document.getElementById("filterRon");
+let whisky = document.getElementById("filterWhisky");
+let gin = document.getElementById("filterGin");
+let tequila = document.getElementById("filterTequila");
+let brandy = document.getElementById("filterBrandy");
+let vodka = document.getElementById("filterVodka");
+let champagne = document.getElementById("filterChampagne");
+
 
 ron.addEventListener("click", () => {
 
-  inProgress();
+  filtrarPorValor("principal","ron");
 
 })
-let whisky = document.getElementById("filterWhisky");
 
 whisky.addEventListener("click", () => {
 
-  inProgress();
+  filtrarPorValor("principal","whisky");
 
 })
-let gin = document.getElementById("filterGin");
 
 gin.addEventListener("click", () => {
 
-  inProgress();
+  filtrarPorValor("principal","gin");
 
 })
-let tequila = document.getElementById("filterTequila");
 
 tequila.addEventListener("click", () => {
 
-  inProgress();
+  filtrarPorValor("principal","tequila");
 
 })
-let brandy = document.getElementById("filterBrandy");
 
 brandy.addEventListener("click", () => {
 
-  inProgress();
+  filtrarPorValor("principal","brandy");
 
 })
-let vodka = document.getElementById("filterVodka");
 
 vodka.addEventListener("click", () => {
 
-  inProgress();
+  filtrarPorValor("principal","vodka");
 
 })
-let champagne = document.getElementById("filterChampagne");
 
 champagne.addEventListener("click", () => {
 
-  inProgress();
+  filtrarPorValor("principal","champagne");
 
 })
 
@@ -138,30 +185,31 @@ champagne.addEventListener("click", () => {
 // Filtros dificultad
 
 let muyBaja = document.getElementById("filterMB");
+let baja = document.getElementById("filterBaja");
+let media = document.getElementById("filterMedia");
+let alta = document.getElementById("filterAlta");
+
 
 muyBaja.addEventListener("click", () => {
 
-  inProgress();
+  filtrarPorValor("dificult","muy baja");
 
 })
-let baja = document.getElementById("filterBaja");
 
 baja.addEventListener("click", () => {
 
-  inProgress();
+  filtrarPorValor("dificult","baja");
 
 })
-let media = document.getElementById("filterMedia");
 
 media.addEventListener("click", () => {
 
-  inProgress();
+  filtrarPorValor("dificult","media");
 
 })
-let alta = document.getElementById("filterAlta");
 
 alta.addEventListener("click", () => {
 
-  inProgress();
+  filtrarPorValor("dificult","alta");
 
 })

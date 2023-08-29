@@ -1,9 +1,6 @@
 // Inicializo clase Gestionar Cocteles
 let gestorCocteles = new GestionarCocteles();
 
-// Creo Array para guardar la info que traje con la solicitud a la base de datos
-let coctelesBebidas = new Array();
-
 document.addEventListener("DOMContentLoaded", () => {
 
     gestorCocteles.solicitarData();
